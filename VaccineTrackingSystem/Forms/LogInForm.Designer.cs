@@ -29,97 +29,115 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogInForm));
-            this.Login = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LogIn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.IsAdmin = new System.Windows.Forms.RadioButton();
+            this.SignUp = new System.Windows.Forms.Button();
             this.IsUser = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // Login
+            // LogIn
             // 
-            this.Login.BackColor = System.Drawing.Color.LightGray;
-            this.Login.Location = new System.Drawing.Point(9, 394);
-            this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(155, 44);
-            this.Login.TabIndex = 0;
-            this.Login.Text = "Login";
-            this.Login.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(12, 116);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(157, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.LightGray;
-            this.button1.Location = new System.Drawing.Point(198, 394);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(155, 44);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Sign Up";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 87);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "National ID";
+            this.LogIn.BackColor = System.Drawing.Color.Transparent;
+            this.LogIn.FlatAppearance.BorderSize = 0;
+            this.LogIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogIn.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogIn.ForeColor = System.Drawing.Color.White;
+            this.LogIn.Image = ((System.Drawing.Image)(resources.GetObject("LogIn.Image")));
+            this.LogIn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.LogIn.Location = new System.Drawing.Point(9, 402);
+            this.LogIn.Name = "LogIn";
+            this.LogIn.Size = new System.Drawing.Size(178, 36);
+            this.LogIn.TabIndex = 0;
+            this.LogIn.Text = "Log In";
+            this.LogIn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LogIn.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(9, 152);
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
+            this.label2.ForeColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(7, 122);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 25);
+            this.label2.Size = new System.Drawing.Size(109, 29);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Password";
+            this.label2.Text = "Password:";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 178);
+            this.textBox2.Location = new System.Drawing.Point(141, 122);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(157, 20);
+            this.textBox2.Size = new System.Drawing.Size(167, 20);
             this.textBox2.TabIndex = 5;
             // 
             // IsAdmin
             // 
             this.IsAdmin.AutoSize = true;
             this.IsAdmin.BackColor = System.Drawing.Color.Transparent;
-            this.IsAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IsAdmin.Location = new System.Drawing.Point(104, 219);
+            this.IsAdmin.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
+            this.IsAdmin.ForeColor = System.Drawing.Color.White;
+            this.IsAdmin.Location = new System.Drawing.Point(9, 210);
             this.IsAdmin.Name = "IsAdmin";
-            this.IsAdmin.Size = new System.Drawing.Size(83, 28);
+            this.IsAdmin.Size = new System.Drawing.Size(93, 33);
             this.IsAdmin.TabIndex = 6;
             this.IsAdmin.TabStop = true;
             this.IsAdmin.Text = "Admin";
             this.IsAdmin.UseVisualStyleBackColor = false;
             // 
+            // SignUp
+            // 
+            this.SignUp.BackColor = System.Drawing.Color.Transparent;
+            this.SignUp.FlatAppearance.BorderSize = 0;
+            this.SignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SignUp.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignUp.ForeColor = System.Drawing.Color.White;
+            this.SignUp.Image = ((System.Drawing.Image)(resources.GetObject("SignUp.Image")));
+            this.SignUp.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.SignUp.Location = new System.Drawing.Point(610, 12);
+            this.SignUp.Name = "SignUp";
+            this.SignUp.Size = new System.Drawing.Size(178, 36);
+            this.SignUp.TabIndex = 9;
+            this.SignUp.Text = "Sign Up";
+            this.SignUp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SignUp.UseVisualStyleBackColor = false;
+            // 
             // IsUser
             // 
             this.IsUser.AutoSize = true;
             this.IsUser.BackColor = System.Drawing.Color.Transparent;
-            this.IsUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IsUser.Location = new System.Drawing.Point(9, 219);
+            this.IsUser.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
+            this.IsUser.ForeColor = System.Drawing.Color.White;
+            this.IsUser.Location = new System.Drawing.Point(9, 171);
             this.IsUser.Name = "IsUser";
-            this.IsUser.Size = new System.Drawing.Size(67, 28);
-            this.IsUser.TabIndex = 7;
+            this.IsUser.Size = new System.Drawing.Size(77, 33);
+            this.IsUser.TabIndex = 10;
             this.IsUser.TabStop = true;
             this.IsUser.Text = "User";
             this.IsUser.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(7, 72);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 29);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "National ID:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(141, 81);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(167, 20);
+            this.textBox3.TabIndex = 12;
             // 
             // LogInForm
             // 
@@ -128,14 +146,14 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.IsUser);
+            this.Controls.Add(this.SignUp);
+            this.Controls.Add(this.LogIn);
             this.Controls.Add(this.IsAdmin);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.Login);
             this.Name = "LogInForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -145,14 +163,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button Login;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button LogIn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.RadioButton IsAdmin;
+        private System.Windows.Forms.Button SignUp;
         private System.Windows.Forms.RadioButton IsUser;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
 
