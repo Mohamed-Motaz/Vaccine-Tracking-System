@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VaccineTrackingSystem.Forms;
 
 namespace VaccineTrackingSystem
 {
@@ -16,7 +17,7 @@ namespace VaccineTrackingSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LogInForm());
+            Application.Run(new AdminControlForm());
         }
     }
 }

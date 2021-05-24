@@ -9,14 +9,14 @@ namespace VaccineTrackingSystem.DataModels
     class User
     {
 
-        public string UserName = "";
-        public string NationalID = "";
-        public string Password = "";
-        public bool Gender = false;   //male -> true, female always false
-        public int Age = 0;
-        public string Country = "Egypt";
-        public string Governorate = "";
-        public int Vaccinated = 0; //stands for number of doses taken, 0, 1, or 2
+        public string UserName { get; set; } = "";
+        public string NationalID { get; set; } = "";
+        public string Password { get; set; } = "";
+        public string Gender { get; set; } = "";   
+        public int Age { get; set; } = 0;
+        public string Country { get; set; } = "Egypt";
+        public string Governorate { get; set; } = "";
+        public int Vaccinated { get; set; } = 0; //stands for number of doses taken, 0, 1, or 2
 
 
         //general functions
