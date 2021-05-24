@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminControlForm));
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,7 +42,7 @@
             this.vaccinatedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.deleteBtn = new System.Windows.Forms.Button();
+            this.DeleteAllRecords = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -137,15 +138,22 @@
             // 
             this.userBindingSource.DataSource = typeof(VaccineTrackingSystem.DataModels.User);
             // 
-            // deleteBtn
+            // DeleteAllRecords
             // 
-            this.deleteBtn.Location = new System.Drawing.Point(802, 27);
-            this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.Size = new System.Drawing.Size(122, 39);
-            this.deleteBtn.TabIndex = 2;
-            this.deleteBtn.Text = "Delete All Records";
-            this.deleteBtn.UseVisualStyleBackColor = true;
-            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
+            this.DeleteAllRecords.BackColor = System.Drawing.Color.Transparent;
+            this.DeleteAllRecords.FlatAppearance.BorderSize = 0;
+            this.DeleteAllRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeleteAllRecords.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteAllRecords.ForeColor = System.Drawing.Color.White;
+            this.DeleteAllRecords.Image = ((System.Drawing.Image)(resources.GetObject("DeleteAllRecords.Image")));
+            this.DeleteAllRecords.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.DeleteAllRecords.Location = new System.Drawing.Point(653, -2);
+            this.DeleteAllRecords.Name = "DeleteAllRecords";
+            this.DeleteAllRecords.Size = new System.Drawing.Size(256, 68);
+            this.DeleteAllRecords.TabIndex = 21;
+            this.DeleteAllRecords.Text = "Delete All Records";
+            this.DeleteAllRecords.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DeleteAllRecords.UseVisualStyleBackColor = false;
             // 
             // AdminControlForm
             // 
@@ -153,7 +161,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(968, 584);
-            this.Controls.Add(this.deleteBtn);
+            this.Controls.Add(this.DeleteAllRecords);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.searchTextBox);
             this.Name = "AdminControlForm";
@@ -180,6 +188,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn vaccinatedDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewButtonColumn Delete;
         private System.Windows.Forms.BindingSource userBindingSource;
-        private System.Windows.Forms.Button deleteBtn;
+        private System.Windows.Forms.Button DeleteAllRecords;
     }
 }

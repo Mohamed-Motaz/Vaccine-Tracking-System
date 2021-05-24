@@ -120,14 +120,14 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="LogIn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFpSURBVEhLpZZRa8JAEITzLFKKSBAR/z8UH/okpZQiIiJF
-        ij+l9D3xm+1eer2atHcZGG4jmdnNbbJnJbRtO4EP8MP52TTND/LbjrU2QQkwmMEDvAnMtRxYZy7JBwYL
-        eJSTGxriGLzC8iSYzTFQpeamNY3hnsu5S/KBuIYnmQ5APbl3ST4QLzF5+/L6hp4grPCZsDwJ4gUmx8Q0
-        pXoyaruU5GwZ+vEC71ySD8Qr+C4nVR0Qx2DL9agk1hOZDvCJe0b1REkucAhbOHVJPhCvoSVR1QFJvIET
-        l+QB/RrxRYbBNI3BI8x/CkTaImt2H0igPhSZ63W1JgeksZvnNxnhCp7dJDbsYqDm5r+miDSXfo2MGCTQ
-        h5ZfOSKZ2/gOCFUL/hRlowLREvHJTWLDLgZlww7xn+Oae3YsReY6cHSg3IQqh3sV4ZL/A32N0MazGBl2
-        MSg7MhEPHvoC95Qd+mincAPtL0sPteeZ21JVV73q4s9Dr9EyAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        xAAADsQBlSsOGwAAAWlJREFUSEulllFrwkAQhPMsUopIEBH/PxQf+iSllCIiIkWKP6X0PfGb7V56vZq0
+        dxkYbiOZ2c1tsmcltG07gQ/ww/nZNM0P8tuOtTZBCTCYwQO8Ccy1HFhnLskHBgt4lJMbGuIYvMLyJJjN
+        MVCl5qY1jeGey7lL8oG4hieZDkA9uXdJPhAvMXn78vqGniCs8JmwPAniBSbHxDSlejJqu5TkbBn68QLv
+        XJIPxCv4LidVHRDHYMv1qCTWE5kO8Il7RvVESS5wCFs4dUk+EK+hJVHVAUm8gROX5AH9GvFFhsE0jcEj
+        zH8KRNoia3YfSKA+FJnrdbUmB6Sxm+c3GeEKnt0kNuxioObmv6aINJd+jYwYJNCHll85Ipnb+A4IVQv+
+        FGWjAtES8clNYsMuBmXDDvGf45p7dixF5jpwdKDchCqHexXhkv8DfY3QxrMYGXYxKDsyEQ8e+gL3lB36
+        aKdwA+0vSw+155nbUlVXveriz0Ov0TIAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="SignUp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

@@ -29,179 +29,253 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserForm));
-            this.Submit = new System.Windows.Forms.Button();
-            this.Name = new System.Windows.Forms.TextBox();
-            this.Password = new System.Windows.Forms.TextBox();
-            this.NationalID = new System.Windows.Forms.TextBox();
-            this.Country = new System.Windows.Forms.TextBox();
-            this.Age = new System.Windows.Forms.TextBox();
+            this.UserName = new System.Windows.Forms.TextBox();
+            this.UserPassword = new System.Windows.Forms.TextBox();
+            this.UserCountry = new System.Windows.Forms.TextBox();
+            this.UserAge = new System.Windows.Forms.TextBox();
+            this.UserGovernorate = new System.Windows.Forms.ComboBox();
+            this.UserSubmit = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label = new System.Windows.Forms.Label();
+            this.UserNationalID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.GenderComboBox = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.GovernorateComboBox = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.Vaccinated = new System.Windows.Forms.TextBox();
+            this.Male = new System.Windows.Forms.RadioButton();
+            this.Female = new System.Windows.Forms.RadioButton();
+            this.Zero = new System.Windows.Forms.RadioButton();
+            this.One = new System.Windows.Forms.RadioButton();
+            this.Two = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
-            // Submit
+            // UserName
             // 
-            this.Submit.Location = new System.Drawing.Point(159, 418);
-            this.Submit.Name = "Submit";
-            this.Submit.Size = new System.Drawing.Size(103, 41);
-            this.Submit.TabIndex = 0;
-            this.Submit.Text = "Submit";
-            this.Submit.UseVisualStyleBackColor = true;
+            this.UserName.Location = new System.Drawing.Point(81, 40);
+            this.UserName.Name = "UserName";
+            this.UserName.Size = new System.Drawing.Size(157, 20);
+            this.UserName.TabIndex = 1;
             // 
-            // Name
+            // UserPassword
             // 
-            this.Name.Location = new System.Drawing.Point(79, 40);
-            this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(144, 20);
-            this.Name.TabIndex = 1;
+            this.UserPassword.Location = new System.Drawing.Point(117, 95);
+            this.UserPassword.Name = "UserPassword";
+            this.UserPassword.Size = new System.Drawing.Size(121, 20);
+            this.UserPassword.TabIndex = 2;
             // 
-            // Password
+            // UserCountry
             // 
-            this.Password.Location = new System.Drawing.Point(115, 118);
-            this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(108, 20);
-            this.Password.TabIndex = 2;
+            this.UserCountry.Location = new System.Drawing.Point(357, 95);
+            this.UserCountry.Name = "UserCountry";
+            this.UserCountry.Size = new System.Drawing.Size(182, 20);
+            this.UserCountry.TabIndex = 4;
             // 
-            // NationalID
+            // UserAge
             // 
-            this.NationalID.Location = new System.Drawing.Point(115, 74);
-            this.NationalID.Name = "NationalID";
-            this.NationalID.Size = new System.Drawing.Size(108, 20);
-            this.NationalID.TabIndex = 3;
+            this.UserAge.Location = new System.Drawing.Point(71, 144);
+            this.UserAge.Name = "UserAge";
+            this.UserAge.Size = new System.Drawing.Size(167, 20);
+            this.UserAge.TabIndex = 5;
             // 
-            // Country
+            // UserGovernorate
             // 
-            this.Country.Location = new System.Drawing.Point(98, 273);
-            this.Country.Name = "Country";
-            this.Country.Size = new System.Drawing.Size(100, 20);
-            this.Country.TabIndex = 4;
+            this.UserGovernorate.FormattingEnabled = true;
+            this.UserGovernorate.Location = new System.Drawing.Point(395, 144);
+            this.UserGovernorate.Name = "UserGovernorate";
+            this.UserGovernorate.Size = new System.Drawing.Size(144, 21);
+            this.UserGovernorate.TabIndex = 13;
             // 
-            // Age
+            // UserSubmit
             // 
-            this.Age.Location = new System.Drawing.Point(68, 229);
-            this.Age.Name = "Age";
-            this.Age.Size = new System.Drawing.Size(100, 20);
-            this.Age.TabIndex = 5;
+            this.UserSubmit.BackColor = System.Drawing.Color.Transparent;
+            this.UserSubmit.FlatAppearance.BorderSize = 0;
+            this.UserSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UserSubmit.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserSubmit.ForeColor = System.Drawing.Color.White;
+            this.UserSubmit.Image = ((System.Drawing.Image)(resources.GetObject("UserSubmit.Image")));
+            this.UserSubmit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.UserSubmit.Location = new System.Drawing.Point(295, 423);
+            this.UserSubmit.Name = "UserSubmit";
+            this.UserSubmit.Size = new System.Drawing.Size(117, 36);
+            this.UserSubmit.TabIndex = 17;
+            this.UserSubmit.Text = "Submit";
+            this.UserSubmit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.UserSubmit.UseVisualStyleBackColor = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
+            this.label9.ForeColor = System.Drawing.Color.Transparent;
+            this.label9.Location = new System.Drawing.Point(1, 31);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(74, 29);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Name:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
+            this.label10.ForeColor = System.Drawing.Color.Transparent;
+            this.label10.Location = new System.Drawing.Point(1, 135);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(57, 29);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "Age:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
+            this.label11.ForeColor = System.Drawing.Color.Transparent;
+            this.label11.Location = new System.Drawing.Point(1, 197);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(89, 29);
+            this.label11.TabIndex = 20;
+            this.label11.Text = "Gender:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
+            this.label12.ForeColor = System.Drawing.Color.Transparent;
+            this.label12.Location = new System.Drawing.Point(1, 86);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(109, 29);
+            this.label12.TabIndex = 21;
+            this.label12.Text = "Password:";
+            // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.BackColor = System.Drawing.Color.Transparent;
+            this.label.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
+            this.label.ForeColor = System.Drawing.Color.Transparent;
+            this.label.Location = new System.Drawing.Point(255, 31);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(134, 29);
+            this.label.TabIndex = 22;
+            this.label.Text = "National ID:";
+            // 
+            // UserNationalID
+            // 
+            this.UserNationalID.Location = new System.Drawing.Point(395, 40);
+            this.UserNationalID.Name = "UserNationalID";
+            this.UserNationalID.Size = new System.Drawing.Size(144, 20);
+            this.UserNationalID.TabIndex = 23;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 36);
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(255, 86);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 24);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Name:";
+            this.label1.Size = new System.Drawing.Size(96, 29);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "Country:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 74);
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
+            this.label2.ForeColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(255, 136);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 24);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "National ID:";
+            this.label2.Size = new System.Drawing.Size(139, 29);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Governorate:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 118);
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
+            this.label3.ForeColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(1, 290);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 24);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Password:";
+            this.label3.Size = new System.Drawing.Size(128, 29);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Vaccinated:";
             // 
-            // label4
+            // Male
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 164);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 24);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Gender:";
+            this.Male.AutoSize = true;
+            this.Male.BackColor = System.Drawing.Color.Transparent;
+            this.Male.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
+            this.Male.ForeColor = System.Drawing.Color.White;
+            this.Male.Location = new System.Drawing.Point(111, 229);
+            this.Male.Name = "Male";
+            this.Male.Size = new System.Drawing.Size(78, 33);
+            this.Male.TabIndex = 27;
+            this.Male.TabStop = true;
+            this.Male.Text = "Male";
+            this.Male.UseVisualStyleBackColor = false;
             // 
-            // GenderComboBox
+            // Female
             // 
-            this.GenderComboBox.FormattingEnabled = true;
-            this.GenderComboBox.Location = new System.Drawing.Point(97, 169);
-            this.GenderComboBox.Name = "GenderComboBox";
-            this.GenderComboBox.Size = new System.Drawing.Size(121, 21);
-            this.GenderComboBox.TabIndex = 10;
+            this.Female.AutoSize = true;
+            this.Female.BackColor = System.Drawing.Color.Transparent;
+            this.Female.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
+            this.Female.ForeColor = System.Drawing.Color.White;
+            this.Female.Location = new System.Drawing.Point(6, 229);
+            this.Female.Name = "Female";
+            this.Female.Size = new System.Drawing.Size(99, 33);
+            this.Female.TabIndex = 28;
+            this.Female.TabStop = true;
+            this.Female.Text = "Female";
+            this.Female.UseVisualStyleBackColor = false;
             // 
-            // label5
+            // Zero
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 224);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 24);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Age:";
+            this.Zero.AutoSize = true;
+            this.Zero.BackColor = System.Drawing.Color.Transparent;
+            this.Zero.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
+            this.Zero.ForeColor = System.Drawing.Color.White;
+            this.Zero.Location = new System.Drawing.Point(6, 331);
+            this.Zero.Name = "Zero";
+            this.Zero.Size = new System.Drawing.Size(44, 33);
+            this.Zero.TabIndex = 29;
+            this.Zero.TabStop = true;
+            this.Zero.Text = "0";
+            this.Zero.UseVisualStyleBackColor = false;
             // 
-            // label6
+            // One
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 269);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 24);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Country:";
+            this.One.AutoSize = true;
+            this.One.BackColor = System.Drawing.Color.Transparent;
+            this.One.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
+            this.One.ForeColor = System.Drawing.Color.White;
+            this.One.Location = new System.Drawing.Point(56, 331);
+            this.One.Name = "One";
+            this.One.Size = new System.Drawing.Size(40, 33);
+            this.One.TabIndex = 30;
+            this.One.TabStop = true;
+            this.One.Text = "1";
+            this.One.UseVisualStyleBackColor = false;
             // 
-            // GovernorateComboBox
+            // Two
             // 
-            this.GovernorateComboBox.FormattingEnabled = true;
-            this.GovernorateComboBox.Location = new System.Drawing.Point(141, 313);
-            this.GovernorateComboBox.Name = "GovernorateComboBox";
-            this.GovernorateComboBox.Size = new System.Drawing.Size(121, 21);
-            this.GovernorateComboBox.TabIndex = 13;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(16, 310);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(119, 24);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Governorate:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(16, 370);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(109, 24);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Vaccinated:";
-            // 
-            // Vaccinated
-            // 
-            this.Vaccinated.Location = new System.Drawing.Point(131, 370);
-            this.Vaccinated.Name = "Vaccinated";
-            this.Vaccinated.Size = new System.Drawing.Size(100, 20);
-            this.Vaccinated.TabIndex = 16;
+            this.Two.AutoSize = true;
+            this.Two.BackColor = System.Drawing.Color.Transparent;
+            this.Two.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
+            this.Two.ForeColor = System.Drawing.Color.White;
+            this.Two.Location = new System.Drawing.Point(111, 331);
+            this.Two.Name = "Two";
+            this.Two.Size = new System.Drawing.Size(44, 33);
+            this.Two.TabIndex = 31;
+            this.Two.TabStop = true;
+            this.Two.Text = "2";
+            this.Two.UseVisualStyleBackColor = false;
             // 
             // UserForm
             // 
@@ -210,24 +284,28 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(703, 471);
-            this.Controls.Add(this.Vaccinated);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.GovernorateComboBox);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.GenderComboBox);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.Two);
+            this.Controls.Add(this.One);
+            this.Controls.Add(this.Zero);
+            this.Controls.Add(this.Female);
+            this.Controls.Add(this.Male);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.Age);
-            this.Controls.Add(this.Country);
-            this.Controls.Add(this.NationalID);
-            this.Controls.Add(this.Password);
-            this.Controls.Add(this.Name);
-            this.Controls.Add(this.Submit);
+            this.Controls.Add(this.UserNationalID);
+            this.Controls.Add(this.label);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.UserSubmit);
+            this.Controls.Add(this.UserGovernorate);
+            this.Controls.Add(this.UserAge);
+            this.Controls.Add(this.UserCountry);
+            this.Controls.Add(this.UserPassword);
+            this.Controls.Add(this.UserName);
             this.DoubleBuffered = true;
+            this.Name = "UserForm";
             this.Text = "UserForm";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -235,23 +313,25 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button Submit;
-        private System.Windows.Forms.TextBox Name;
-        private System.Windows.Forms.TextBox Password;
-        private System.Windows.Forms.TextBox NationalID;
-        private System.Windows.Forms.TextBox Country;
-        private System.Windows.Forms.TextBox Age;
+        private System.Windows.Forms.TextBox UserName;
+        private System.Windows.Forms.TextBox UserPassword;
+        private System.Windows.Forms.TextBox UserCountry;
+        private System.Windows.Forms.TextBox UserAge;
+        private System.Windows.Forms.ComboBox UserGovernorate;
+        private System.Windows.Forms.Button UserSubmit;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label;
+        private System.Windows.Forms.TextBox UserNationalID;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox GenderComboBox;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox GovernorateComboBox;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox Vaccinated;
+        private System.Windows.Forms.RadioButton Male;
+        private System.Windows.Forms.RadioButton Female;
+        private System.Windows.Forms.RadioButton Zero;
+        private System.Windows.Forms.RadioButton One;
+        private System.Windows.Forms.RadioButton Two;
     }
 }

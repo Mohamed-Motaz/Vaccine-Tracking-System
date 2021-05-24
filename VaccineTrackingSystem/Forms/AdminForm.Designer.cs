@@ -29,27 +29,43 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Statistics = new System.Windows.Forms.Button();
+            this.WaitingList = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button2
+            // Statistics
             // 
-            this.button2.Location = new System.Drawing.Point(512, 342);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(201, 82);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "View";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Statistics.BackColor = System.Drawing.Color.Transparent;
+            this.Statistics.FlatAppearance.BorderSize = 0;
+            this.Statistics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Statistics.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Statistics.ForeColor = System.Drawing.Color.White;
+            this.Statistics.Image = ((System.Drawing.Image)(resources.GetObject("Statistics.Image")));
+            this.Statistics.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Statistics.Location = new System.Drawing.Point(28, 12);
+            this.Statistics.Name = "Statistics";
+            this.Statistics.Size = new System.Drawing.Size(157, 68);
+            this.Statistics.TabIndex = 18;
+            this.Statistics.Text = "Statistics";
+            this.Statistics.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Statistics.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // WaitingList
             // 
-            this.button1.Location = new System.Drawing.Point(63, 342);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(201, 82);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Statistics";
-            this.button1.UseVisualStyleBackColor = true;
+            this.WaitingList.BackColor = System.Drawing.Color.Transparent;
+            this.WaitingList.FlatAppearance.BorderSize = 0;
+            this.WaitingList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.WaitingList.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WaitingList.ForeColor = System.Drawing.Color.White;
+            this.WaitingList.Image = ((System.Drawing.Image)(resources.GetObject("WaitingList.Image")));
+            this.WaitingList.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.WaitingList.Location = new System.Drawing.Point(563, 12);
+            this.WaitingList.Name = "WaitingList";
+            this.WaitingList.Size = new System.Drawing.Size(180, 68);
+            this.WaitingList.TabIndex = 19;
+            this.WaitingList.Text = "Waiting List";
+            this.WaitingList.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.WaitingList.UseVisualStyleBackColor = false;
             // 
             // AdminForm
             // 
@@ -58,17 +74,19 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(773, 492);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.WaitingList);
+            this.Controls.Add(this.Statistics);
             this.DoubleBuffered = true;
             this.Name = "AdminForm";
             this.Text = "AdminForm";
+            this.Load += new System.EventHandler(this.AdminForm_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+
+        private System.Windows.Forms.Button Statistics;
+        private System.Windows.Forms.Button WaitingList;
     }
 }

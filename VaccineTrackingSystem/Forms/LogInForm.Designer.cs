@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogInForm));
             this.LogIn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.LogInPassword = new System.Windows.Forms.TextBox();
             this.IsAdmin = new System.Windows.Forms.RadioButton();
             this.SignUp = new System.Windows.Forms.Button();
             this.IsUser = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.LogInNationlID = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // LogIn
@@ -50,7 +50,7 @@
             this.LogIn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LogIn.Location = new System.Drawing.Point(9, 402);
             this.LogIn.Name = "LogIn";
-            this.LogIn.Size = new System.Drawing.Size(178, 36);
+            this.LogIn.Size = new System.Drawing.Size(107, 36);
             this.LogIn.TabIndex = 0;
             this.LogIn.Text = "Log In";
             this.LogIn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -68,12 +68,12 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Password:";
             // 
-            // textBox2
+            // LogInPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(141, 122);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 20);
-            this.textBox2.TabIndex = 5;
+            this.LogInPassword.Location = new System.Drawing.Point(122, 131);
+            this.LogInPassword.Name = "LogInPassword";
+            this.LogInPassword.Size = new System.Drawing.Size(186, 20);
+            this.LogInPassword.TabIndex = 5;
             // 
             // IsAdmin
             // 
@@ -98,9 +98,9 @@
             this.SignUp.ForeColor = System.Drawing.Color.White;
             this.SignUp.Image = ((System.Drawing.Image)(resources.GetObject("SignUp.Image")));
             this.SignUp.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.SignUp.Location = new System.Drawing.Point(610, 12);
+            this.SignUp.Location = new System.Drawing.Point(671, 12);
             this.SignUp.Name = "SignUp";
-            this.SignUp.Size = new System.Drawing.Size(178, 36);
+            this.SignUp.Size = new System.Drawing.Size(117, 36);
             this.SignUp.TabIndex = 9;
             this.SignUp.Text = "Sign Up";
             this.SignUp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -132,12 +132,12 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "National ID:";
             // 
-            // textBox3
+            // LogInNationlID
             // 
-            this.textBox3.Location = new System.Drawing.Point(141, 81);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(167, 20);
-            this.textBox3.TabIndex = 12;
+            this.LogInNationlID.Location = new System.Drawing.Point(141, 81);
+            this.LogInNationlID.Name = "LogInNationlID";
+            this.LogInNationlID.Size = new System.Drawing.Size(167, 20);
+            this.LogInNationlID.TabIndex = 12;
             // 
             // LogInForm
             // 
@@ -146,13 +146,13 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.LogInNationlID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.IsUser);
             this.Controls.Add(this.SignUp);
             this.Controls.Add(this.LogIn);
             this.Controls.Add(this.IsAdmin);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.LogInPassword);
             this.Controls.Add(this.label2);
             this.Name = "LogInForm";
             this.Text = "Form1";
@@ -165,12 +165,12 @@
 
         private System.Windows.Forms.Button LogIn;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox LogInPassword;
         private System.Windows.Forms.RadioButton IsAdmin;
         private System.Windows.Forms.Button SignUp;
         private System.Windows.Forms.RadioButton IsUser;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox LogInNationlID;
     }
 }
 
