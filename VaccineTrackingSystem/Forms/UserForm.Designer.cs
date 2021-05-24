@@ -53,39 +53,45 @@
             // 
             // UserName
             // 
-            this.UserName.Location = new System.Drawing.Point(81, 40);
+            this.UserName.Location = new System.Drawing.Point(108, 49);
+            this.UserName.Margin = new System.Windows.Forms.Padding(4);
             this.UserName.Name = "UserName";
-            this.UserName.Size = new System.Drawing.Size(157, 20);
+            this.UserName.Size = new System.Drawing.Size(208, 22);
             this.UserName.TabIndex = 1;
             // 
             // UserPassword
             // 
-            this.UserPassword.Location = new System.Drawing.Point(117, 95);
+            this.UserPassword.Location = new System.Drawing.Point(156, 117);
+            this.UserPassword.Margin = new System.Windows.Forms.Padding(4);
             this.UserPassword.Name = "UserPassword";
-            this.UserPassword.Size = new System.Drawing.Size(121, 20);
+            this.UserPassword.Size = new System.Drawing.Size(160, 22);
             this.UserPassword.TabIndex = 2;
             // 
             // UserCountry
             // 
-            this.UserCountry.Location = new System.Drawing.Point(357, 95);
+            this.UserCountry.Location = new System.Drawing.Point(476, 117);
+            this.UserCountry.Margin = new System.Windows.Forms.Padding(4);
             this.UserCountry.Name = "UserCountry";
-            this.UserCountry.Size = new System.Drawing.Size(182, 20);
+            this.UserCountry.Size = new System.Drawing.Size(241, 22);
             this.UserCountry.TabIndex = 4;
             // 
             // UserAge
             // 
-            this.UserAge.Location = new System.Drawing.Point(71, 144);
+            this.UserAge.Location = new System.Drawing.Point(95, 177);
+            this.UserAge.Margin = new System.Windows.Forms.Padding(4);
             this.UserAge.Name = "UserAge";
-            this.UserAge.Size = new System.Drawing.Size(167, 20);
+            this.UserAge.Size = new System.Drawing.Size(221, 22);
             this.UserAge.TabIndex = 5;
             // 
             // UserGovernorate
             // 
             this.UserGovernorate.FormattingEnabled = true;
-            this.UserGovernorate.Location = new System.Drawing.Point(395, 144);
+            this.UserGovernorate.Location = new System.Drawing.Point(527, 177);
+            this.UserGovernorate.Margin = new System.Windows.Forms.Padding(4);
             this.UserGovernorate.Name = "UserGovernorate";
-            this.UserGovernorate.Size = new System.Drawing.Size(144, 21);
+            this.UserGovernorate.Size = new System.Drawing.Size(191, 24);
             this.UserGovernorate.TabIndex = 13;
+            this.UserGovernorate.SelectedIndexChanged += new System.EventHandler(this.UserGovernorate_SelectedIndexChanged);
             // 
             // UserSubmit
             // 
@@ -96,13 +102,15 @@
             this.UserSubmit.ForeColor = System.Drawing.Color.White;
             this.UserSubmit.Image = ((System.Drawing.Image)(resources.GetObject("UserSubmit.Image")));
             this.UserSubmit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.UserSubmit.Location = new System.Drawing.Point(295, 423);
+            this.UserSubmit.Location = new System.Drawing.Point(393, 521);
+            this.UserSubmit.Margin = new System.Windows.Forms.Padding(4);
             this.UserSubmit.Name = "UserSubmit";
-            this.UserSubmit.Size = new System.Drawing.Size(117, 36);
+            this.UserSubmit.Size = new System.Drawing.Size(156, 44);
             this.UserSubmit.TabIndex = 17;
             this.UserSubmit.Text = "Submit";
             this.UserSubmit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.UserSubmit.UseVisualStyleBackColor = false;
+            this.UserSubmit.Click += new System.EventHandler(this.UserSubmit_Click);
             // 
             // label9
             // 
@@ -110,9 +118,10 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
             this.label9.ForeColor = System.Drawing.Color.Transparent;
-            this.label9.Location = new System.Drawing.Point(1, 31);
+            this.label9.Location = new System.Drawing.Point(1, 38);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 29);
+            this.label9.Size = new System.Drawing.Size(97, 38);
             this.label9.TabIndex = 18;
             this.label9.Text = "Name:";
             // 
@@ -122,9 +131,10 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
             this.label10.ForeColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(1, 135);
+            this.label10.Location = new System.Drawing.Point(1, 166);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(57, 29);
+            this.label10.Size = new System.Drawing.Size(74, 38);
             this.label10.TabIndex = 19;
             this.label10.Text = "Age:";
             // 
@@ -134,9 +144,10 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
             this.label11.ForeColor = System.Drawing.Color.Transparent;
-            this.label11.Location = new System.Drawing.Point(1, 197);
+            this.label11.Location = new System.Drawing.Point(1, 242);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(89, 29);
+            this.label11.Size = new System.Drawing.Size(116, 38);
             this.label11.TabIndex = 20;
             this.label11.Text = "Gender:";
             // 
@@ -146,9 +157,10 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
             this.label12.ForeColor = System.Drawing.Color.Transparent;
-            this.label12.Location = new System.Drawing.Point(1, 86);
+            this.label12.Location = new System.Drawing.Point(1, 106);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(109, 29);
+            this.label12.Size = new System.Drawing.Size(141, 38);
             this.label12.TabIndex = 21;
             this.label12.Text = "Password:";
             // 
@@ -158,17 +170,19 @@
             this.label.BackColor = System.Drawing.Color.Transparent;
             this.label.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
             this.label.ForeColor = System.Drawing.Color.Transparent;
-            this.label.Location = new System.Drawing.Point(255, 31);
+            this.label.Location = new System.Drawing.Point(340, 38);
+            this.label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(134, 29);
+            this.label.Size = new System.Drawing.Size(172, 38);
             this.label.TabIndex = 22;
             this.label.Text = "National ID:";
             // 
             // UserNationalID
             // 
-            this.UserNationalID.Location = new System.Drawing.Point(395, 40);
+            this.UserNationalID.Location = new System.Drawing.Point(527, 49);
+            this.UserNationalID.Margin = new System.Windows.Forms.Padding(4);
             this.UserNationalID.Name = "UserNationalID";
-            this.UserNationalID.Size = new System.Drawing.Size(144, 20);
+            this.UserNationalID.Size = new System.Drawing.Size(191, 22);
             this.UserNationalID.TabIndex = 23;
             // 
             // label1
@@ -177,9 +191,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(255, 86);
+            this.label1.Location = new System.Drawing.Point(340, 106);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 29);
+            this.label1.Size = new System.Drawing.Size(123, 38);
             this.label1.TabIndex = 24;
             this.label1.Text = "Country:";
             // 
@@ -189,9 +204,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
             this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(255, 136);
+            this.label2.Location = new System.Drawing.Point(340, 167);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 29);
+            this.label2.Size = new System.Drawing.Size(181, 38);
             this.label2.TabIndex = 25;
             this.label2.Text = "Governorate:";
             // 
@@ -201,9 +217,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
             this.label3.ForeColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(1, 290);
+            this.label3.Location = new System.Drawing.Point(1, 357);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(128, 29);
+            this.label3.Size = new System.Drawing.Size(164, 38);
             this.label3.TabIndex = 26;
             this.label3.Text = "Vaccinated:";
             // 
@@ -213,9 +230,10 @@
             this.Male.BackColor = System.Drawing.Color.Transparent;
             this.Male.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
             this.Male.ForeColor = System.Drawing.Color.White;
-            this.Male.Location = new System.Drawing.Point(111, 229);
+            this.Male.Location = new System.Drawing.Point(148, 282);
+            this.Male.Margin = new System.Windows.Forms.Padding(4);
             this.Male.Name = "Male";
-            this.Male.Size = new System.Drawing.Size(78, 33);
+            this.Male.Size = new System.Drawing.Size(97, 42);
             this.Male.TabIndex = 27;
             this.Male.TabStop = true;
             this.Male.Text = "Male";
@@ -227,9 +245,10 @@
             this.Female.BackColor = System.Drawing.Color.Transparent;
             this.Female.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
             this.Female.ForeColor = System.Drawing.Color.White;
-            this.Female.Location = new System.Drawing.Point(6, 229);
+            this.Female.Location = new System.Drawing.Point(8, 282);
+            this.Female.Margin = new System.Windows.Forms.Padding(4);
             this.Female.Name = "Female";
-            this.Female.Size = new System.Drawing.Size(99, 33);
+            this.Female.Size = new System.Drawing.Size(126, 42);
             this.Female.TabIndex = 28;
             this.Female.TabStop = true;
             this.Female.Text = "Female";
@@ -241,9 +260,10 @@
             this.Zero.BackColor = System.Drawing.Color.Transparent;
             this.Zero.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
             this.Zero.ForeColor = System.Drawing.Color.White;
-            this.Zero.Location = new System.Drawing.Point(6, 331);
+            this.Zero.Location = new System.Drawing.Point(8, 407);
+            this.Zero.Margin = new System.Windows.Forms.Padding(4);
             this.Zero.Name = "Zero";
-            this.Zero.Size = new System.Drawing.Size(44, 33);
+            this.Zero.Size = new System.Drawing.Size(54, 42);
             this.Zero.TabIndex = 29;
             this.Zero.TabStop = true;
             this.Zero.Text = "0";
@@ -255,9 +275,10 @@
             this.One.BackColor = System.Drawing.Color.Transparent;
             this.One.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
             this.One.ForeColor = System.Drawing.Color.White;
-            this.One.Location = new System.Drawing.Point(56, 331);
+            this.One.Location = new System.Drawing.Point(75, 407);
+            this.One.Margin = new System.Windows.Forms.Padding(4);
             this.One.Name = "One";
-            this.One.Size = new System.Drawing.Size(40, 33);
+            this.One.Size = new System.Drawing.Size(50, 42);
             this.One.TabIndex = 30;
             this.One.TabStop = true;
             this.One.Text = "1";
@@ -269,9 +290,10 @@
             this.Two.BackColor = System.Drawing.Color.Transparent;
             this.Two.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
             this.Two.ForeColor = System.Drawing.Color.White;
-            this.Two.Location = new System.Drawing.Point(111, 331);
+            this.Two.Location = new System.Drawing.Point(148, 407);
+            this.Two.Margin = new System.Windows.Forms.Padding(4);
             this.Two.Name = "Two";
-            this.Two.Size = new System.Drawing.Size(44, 33);
+            this.Two.Size = new System.Drawing.Size(54, 42);
             this.Two.TabIndex = 31;
             this.Two.TabStop = true;
             this.Two.Text = "2";
@@ -279,11 +301,11 @@
             // 
             // UserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(703, 471);
+            this.ClientSize = new System.Drawing.Size(937, 580);
             this.Controls.Add(this.Two);
             this.Controls.Add(this.One);
             this.Controls.Add(this.Zero);
@@ -305,8 +327,10 @@
             this.Controls.Add(this.UserPassword);
             this.Controls.Add(this.UserName);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserForm";
             this.Text = "UserForm";
+            this.Load += new System.EventHandler(this.UserForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

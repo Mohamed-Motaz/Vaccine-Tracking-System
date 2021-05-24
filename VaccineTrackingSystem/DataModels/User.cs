@@ -26,6 +26,7 @@ namespace VaccineTrackingSystem.DataModels
 
         public static void HandleUserUpdate(User user)
         {
+            
         }
         public static void HandleUserDelete(User user)
         {
