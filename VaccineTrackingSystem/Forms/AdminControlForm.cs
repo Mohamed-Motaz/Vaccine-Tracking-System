@@ -52,7 +52,25 @@ namespace VaccineTrackingSystem.Forms
                 Age = 15,
                 Governorate = "Giza",
                 Vaccinated = 1
-            }
+            }, new User()
+        {
+            UserName = "Rawan Ahmed",
+                NationalID = "hscdjkcd",
+                Password = "dcnlkc",
+                Gender = "Male",
+                Age = 15,
+                Governorate = "Giza",
+                Vaccinated = 1
+            }, new User()
+        {
+            UserName = "Salma Tarek",
+                NationalID = "hscdjkcd",
+                Password = "dcnlkc",
+                Gender = "Male",
+                Age = 15,
+                Governorate = "Giza",
+                Vaccinated = 1
+            },
             };
         public AdminControlForm()
         {
@@ -99,6 +117,12 @@ namespace VaccineTrackingSystem.Forms
 
                 userBindingSource.DataSource = newUsers;
             }
+        }
+
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            DataContainer.users.Clear();
+            userBindingSource.DataSource = DataContainer.users;
         }
     }
 }

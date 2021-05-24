@@ -228,7 +228,6 @@
             this.Controls.Add(this.Name);
             this.Controls.Add(this.Submit);
             this.DoubleBuffered = true;
-            this.Name = "UserForm";
             this.Text = "UserForm";
             this.ResumeLayout(false);
             this.PerformLayout();

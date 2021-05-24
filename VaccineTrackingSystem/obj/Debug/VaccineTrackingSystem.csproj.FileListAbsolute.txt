@@ -31,3 +31,7 @@ D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTr
 D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\bin\Debug\VaccineTrackingSystem.exe.config
 D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\bin\Debug\VaccineTrackingSystem.exe
 D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\bin\Debug\VaccineTrackingSystem.pdb
+C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.AdminForm.resources
+C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.LogInForm.resources
+C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.StatisticsForm.resources
+C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.UserForm.resources
