@@ -18,3 +18,16 @@ C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\Vac
 C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.csproj.CoreCompileInputs.cache
 C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.exe
 C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.pdb
+D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.csprojAssemblyReference.cache
+D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.AdminControlForm.resources
+D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.AdminForm.resources
+D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.LogInForm.resources
+D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.UserForm.resources
+D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Properties.Resources.resources
+D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.csproj.GenerateResource.cache
+D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.csproj.CoreCompileInputs.cache
+D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.exe
+D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.pdb
+D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\bin\Debug\VaccineTrackingSystem.exe.config
+D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\bin\Debug\VaccineTrackingSystem.exe
+D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\bin\Debug\VaccineTrackingSystem.pdb
