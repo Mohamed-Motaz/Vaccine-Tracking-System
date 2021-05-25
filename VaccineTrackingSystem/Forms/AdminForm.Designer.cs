@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
             this.Statistics = new System.Windows.Forms.Button();
             this.WaitingList = new System.Windows.Forms.Button();
+            this.UserControl = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Statistics
@@ -49,6 +50,7 @@
             this.Statistics.Text = "Statistics";
             this.Statistics.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Statistics.UseVisualStyleBackColor = false;
+            this.Statistics.Click += new System.EventHandler(this.Statistics_Click);
             // 
             // WaitingList
             // 
@@ -66,6 +68,25 @@
             this.WaitingList.Text = "Waiting List";
             this.WaitingList.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.WaitingList.UseVisualStyleBackColor = false;
+            this.WaitingList.Click += new System.EventHandler(this.WaitingList_Click);
+            // 
+            // UserControl
+            // 
+            this.UserControl.BackColor = System.Drawing.Color.Transparent;
+            this.UserControl.FlatAppearance.BorderSize = 0;
+            this.UserControl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UserControl.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserControl.ForeColor = System.Drawing.Color.White;
+            this.UserControl.Image = ((System.Drawing.Image)(resources.GetObject("UserControl.Image")));
+            this.UserControl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.UserControl.Location = new System.Drawing.Point(226, 344);
+            this.UserControl.Name = "UserControl";
+            this.UserControl.Size = new System.Drawing.Size(184, 77);
+            this.UserControl.TabIndex = 20;
+            this.UserControl.Text = "User Control";
+            this.UserControl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.UserControl.UseVisualStyleBackColor = false;
+            this.UserControl.Click += new System.EventHandler(this.UserControl_Click);
             // 
             // AdminForm
             // 
@@ -74,11 +95,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(773, 492);
+            this.Controls.Add(this.UserControl);
             this.Controls.Add(this.WaitingList);
             this.Controls.Add(this.Statistics);
             this.DoubleBuffered = true;
             this.Name = "AdminForm";
-            this.Text = "AdminForm";
+            this.Text = "Admin";
             this.Load += new System.EventHandler(this.AdminForm_Load);
             this.ResumeLayout(false);
 
@@ -88,5 +110,6 @@
 
         private System.Windows.Forms.Button Statistics;
         private System.Windows.Forms.Button WaitingList;
+        private System.Windows.Forms.Button UserControl;
     }
 }

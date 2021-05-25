@@ -106,6 +106,7 @@
             this.SignUp.Text = "Sign Up";
             this.SignUp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.SignUp.UseVisualStyleBackColor = false;
+            this.SignUp.Click += new System.EventHandler(this.SignUp_Click);
             // 
             // IsUser
             // 
@@ -156,7 +157,7 @@
             this.Controls.Add(this.LogInPassword);
             this.Controls.Add(this.label2);
             this.Name = "LogInForm";
-            this.Text = "Form1";
+            this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 

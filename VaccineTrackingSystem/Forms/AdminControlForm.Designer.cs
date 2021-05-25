@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminControlForm));
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.DeleteAllRecords = new System.Windows.Forms.Button();
             this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nationalIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,9 +42,7 @@
             this.countryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.governorateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vaccinatedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.DeleteAllRecords = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -78,6 +78,30 @@
             this.dataGridView.Size = new System.Drawing.Size(943, 450);
             this.dataGridView.TabIndex = 1;
             this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
+            // 
+            // Delete
+            // 
+            this.Delete.HeaderText = "Delete";
+            this.Delete.Name = "Delete";
+            this.Delete.Text = "Delete";
+            this.Delete.UseColumnTextForButtonValue = true;
+            // 
+            // DeleteAllRecords
+            // 
+            this.DeleteAllRecords.BackColor = System.Drawing.Color.Transparent;
+            this.DeleteAllRecords.FlatAppearance.BorderSize = 0;
+            this.DeleteAllRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeleteAllRecords.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteAllRecords.ForeColor = System.Drawing.Color.White;
+            this.DeleteAllRecords.Image = ((System.Drawing.Image)(resources.GetObject("DeleteAllRecords.Image")));
+            this.DeleteAllRecords.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.DeleteAllRecords.Location = new System.Drawing.Point(653, -2);
+            this.DeleteAllRecords.Name = "DeleteAllRecords";
+            this.DeleteAllRecords.Size = new System.Drawing.Size(256, 68);
+            this.DeleteAllRecords.TabIndex = 21;
+            this.DeleteAllRecords.Text = "Delete All Records";
+            this.DeleteAllRecords.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DeleteAllRecords.UseVisualStyleBackColor = false;
             // 
             // userNameDataGridViewTextBoxColumn
             // 
@@ -127,33 +151,9 @@
             this.vaccinatedDataGridViewTextBoxColumn.HeaderText = "Vaccinated";
             this.vaccinatedDataGridViewTextBoxColumn.Name = "vaccinatedDataGridViewTextBoxColumn";
             // 
-            // Delete
-            // 
-            this.Delete.HeaderText = "Delete";
-            this.Delete.Name = "Delete";
-            this.Delete.Text = "Delete";
-            this.Delete.UseColumnTextForButtonValue = true;
-            // 
             // userBindingSource
             // 
             this.userBindingSource.DataSource = typeof(VaccineTrackingSystem.DataModels.User);
-            // 
-            // DeleteAllRecords
-            // 
-            this.DeleteAllRecords.BackColor = System.Drawing.Color.Transparent;
-            this.DeleteAllRecords.FlatAppearance.BorderSize = 0;
-            this.DeleteAllRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DeleteAllRecords.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteAllRecords.ForeColor = System.Drawing.Color.White;
-            this.DeleteAllRecords.Image = ((System.Drawing.Image)(resources.GetObject("DeleteAllRecords.Image")));
-            this.DeleteAllRecords.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.DeleteAllRecords.Location = new System.Drawing.Point(653, -2);
-            this.DeleteAllRecords.Name = "DeleteAllRecords";
-            this.DeleteAllRecords.Size = new System.Drawing.Size(256, 68);
-            this.DeleteAllRecords.TabIndex = 21;
-            this.DeleteAllRecords.Text = "Delete All Records";
-            this.DeleteAllRecords.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DeleteAllRecords.UseVisualStyleBackColor = false;
             // 
             // AdminControlForm
             // 
@@ -165,7 +165,7 @@
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.searchTextBox);
             this.Name = "AdminControlForm";
-            this.Text = "AdminControlForm";
+            this.Text = "User Control";
             this.Load += new System.EventHandler(this.AdminControlForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();

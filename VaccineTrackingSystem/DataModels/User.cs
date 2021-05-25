@@ -46,5 +46,12 @@ namespace VaccineTrackingSystem.DataModels
             DataContainer.users.Remove(user);
             DataContainer.usersMap.Remove(user.NationalID);
         }
+        public static void HandleUserAdding(User user)
+        {
+            DataContainer.users.Add(user);
+            DataContainer.usersMap[user.NationalID]=user;
+            if(user.Vaccinated==0)
+                DataContainer.currentlyWaiting.Add(user);
+        }
     }
 }

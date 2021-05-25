@@ -30,7 +30,7 @@ namespace VaccineTrackingSystem
                     form.Show();
                 }
                 else
-                    MessageBox.Show("Password is wrong");
+                    MessageBox.Show("Password is wrong!");
 
 
             }
@@ -56,16 +56,22 @@ namespace VaccineTrackingSystem
                         form.Show();
                     }
                     else
-                        MessageBox.Show("Password is wrong");
+                        MessageBox.Show("Password is wrong!");
 
                 }
                 else
-                    MessageBox.Show("National ID is wrong");
+                    MessageBox.Show("National ID is wrong!");
 
 
             }
 
 
+        }
+
+        private void SignUp_Click(object sender, EventArgs e)
+        {
+            UserAddingForm form = new UserAddingForm();
+            form.Show();
         }
     }
 }

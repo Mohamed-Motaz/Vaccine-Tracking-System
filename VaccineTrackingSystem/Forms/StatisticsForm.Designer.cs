@@ -67,6 +67,7 @@
             this.CalculateForVaccineSystem.Text = "Calculate";
             this.CalculateForVaccineSystem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CalculateForVaccineSystem.UseVisualStyleBackColor = false;
+            this.CalculateForVaccineSystem.Click += new System.EventHandler(this.CalculateForVaccineSystem_Click);
             // 
             // label1
             // 
@@ -261,6 +262,7 @@
             this.button1.Text = "Calculate";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // StatisticsForm
             // 
@@ -291,7 +293,7 @@
             this.Controls.Add(this.CalculateForVaccineSystem);
             this.DoubleBuffered = true;
             this.Name = "StatisticsForm";
-            this.Text = "StatisticsForm";
+            this.Text = "Statistics";
             this.ResumeLayout(false);
             this.PerformLayout();
 

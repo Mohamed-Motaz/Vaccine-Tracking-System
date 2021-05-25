@@ -10,10 +10,10 @@ using System.Windows.Forms;
 using VaccineTrackingSystem.DataModels ;
 namespace VaccineTrackingSystem
 {
-    public partial class UserForm : Form
+    public partial class UserAddingForm : Form
     {
       
-        public UserForm()
+        public UserAddingForm()
         {
             InitializeComponent();
         }
@@ -80,22 +80,28 @@ namespace VaccineTrackingSystem
             return true;
         }
 
-        private void UserSubmit_Click(object sender, EventArgs e)
+        private void UserGovernorate_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserAdding_Click(object sender, EventArgs e)
         {
             int age;
 
-            User user = new User();
-            user.UserName = UserName.Text;
-           
             if (!Validate())
             {
                 return;
             }
+
+            User user = new User();
+            user.UserName = UserName.Text;
             user.NationalID = UserNationalID.Text;
             user.Governorate = UserGovernorate.Text;
             user.Password = UserPassword.Text;
             user.Country = UserCountry.Text;
-           if(IsAllDigits (UserAge.Text)){
+            if (IsAllDigits(UserAge.Text))
+            {
 
                 age = Convert.ToInt32(UserAge.Text);
                 if (age < 0 || age > 110)
@@ -108,9 +114,8 @@ namespace VaccineTrackingSystem
             {
                 return;
             }
-            user.Age =age;
+            user.Age = age;
 
-            
             if (Female.Checked)
             {
                 user.Gender = "Female";
@@ -132,12 +137,8 @@ namespace VaccineTrackingSystem
             {
                 user.Vaccinated = 2;
             }
-            User.HandleUserUpdate(user);
-        }
-
-        private void UserGovernorate_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            User.HandleUserAdding(user);
+            MessageBox.Show("User Added ^-^");
         }
     }
 
