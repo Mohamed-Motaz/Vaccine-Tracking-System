@@ -22,7 +22,6 @@ D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTr
 D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.AdminControlForm.resources
 D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.AdminForm.resources
 D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.LogInForm.resources
-D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.UserForm.resources
 D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Properties.Resources.resources
 D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.csproj.GenerateResource.cache
 D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.csproj.CoreCompileInputs.cache
@@ -65,3 +64,8 @@ C:\Users\user.NB1129\Documents\GitHub\Vaccine-Tracking-System\VaccineTrackingSys
 C:\Users\user.NB1129\Documents\GitHub\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.csproj.CoreCompileInputs.cache
 C:\Users\user.NB1129\Documents\GitHub\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.exe
 C:\Users\user.NB1129\Documents\GitHub\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.pdb
+D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.UserAddingForm.resources
+D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.UserForm.resources
+D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.WaitingForVaccinationForm.resources
+D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.ListItem.resources
+D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.UserUpdateForm.resources
