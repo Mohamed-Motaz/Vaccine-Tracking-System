@@ -55,6 +55,7 @@
             this.LogIn.Text = "Log In";
             this.LogIn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LogIn.UseVisualStyleBackColor = false;
+            this.LogIn.Click += new System.EventHandler(this.LogIn_Click);
             // 
             // label2
             // 
