@@ -37,6 +37,7 @@ namespace VaccineTrackingSystem.DataModels
             DataContainer.UsersMap.Add(user.NationalID, user);
             if(user.Vaccinated==0)
                 DataContainer.CurrentlyWaiting.Add(user);
+            
         }
     }
 }

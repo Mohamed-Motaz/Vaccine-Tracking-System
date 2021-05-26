@@ -67,9 +67,17 @@ namespace VaccineTrackingSystem.Forms
         }
 
         private void DeleteAllRecords_Click(object sender, EventArgs e)
-        {
+        {            
+            userBindingSource.DataSource = new List<User>();
             DataContainer.Users.Clear();
-            userBindingSource.DataSource = DataContainer.Users;
+        }
+
+        private void BackBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminForm form = new AdminForm();
+            form.ShowDialog();
+            this.Close();
         }
     }
 }

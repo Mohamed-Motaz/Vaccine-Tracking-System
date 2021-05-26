@@ -49,7 +49,10 @@ namespace VaccineTrackingSystem.Forms
 
         private void BackBtn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            LogInForm form = new LogInForm();
+            form.ShowDialog();
+            this.Close();
         }
     }
 }

@@ -17,69 +17,11 @@ namespace VaccineTrackingSystem.Forms
         {
             InitializeComponent();
         }
-        List<User> tmp = new List<User>() { new User()
-            {
-                UserName = "Mohamed Motaz",
-                NationalID = "hscdjkcd",
-                Password = "dcnlkc",
-                Gender = "Male",
-                Age = 15,
-                Governorate = "Giza",
-                Vaccinated = 1
-        },
-        new User()
-        {
-            UserName = "Ali Agina",
-                NationalID = "hscdjkcd",
-                Password = "dcnlkc",
-                Gender = "Male",
-                Age = 15,
-                Governorate = "Giza",
-                Vaccinated = 1
-            },
-          new User()
-        {
-            UserName = "Kareem Ezzat",
-                NationalID = "hscdjkcd",
-                Password = "dcnlkc",
-                Gender = "Male",
-                Age = 15,
-                Governorate = "Giza",
-                Vaccinated = 1
-            },
-            new User()
-        {
-            UserName = "AbdelAzim",
-                NationalID = "hscdjkcd",
-                Password = "dcnlkc",
-                Gender = "Male",
-                Age = 15,
-                Governorate = "Giza",
-                Vaccinated = 1
-            }, new User()
-        {
-            UserName = "Rawan Ahmed",
-                NationalID = "hscdjkcd",
-                Password = "dcnlkc",
-                Gender = "Male",
-                Age = 15,
-                Governorate = "Giza",
-                Vaccinated = 1
-            }, new User()
-        {
-            UserName = "Salma Tarek",
-                NationalID = "hscdjkcd",
-                Password = "dcnlkc",
-                Gender = "Male",
-                Age = 15,
-                Governorate = "Giza",
-                Vaccinated = 1
-            },
-            };
+        
         private void WaitingForVaccinationForm_Load(object sender, EventArgs e)
         {
 
-            foreach(User newUser in tmp)
+            foreach(User newUser in DataContainer.CurrentlyWaiting)
             {
                 ListItem newList = new ListItem();
                 newList.name = newUser.UserName;
@@ -106,6 +48,14 @@ namespace VaccineTrackingSystem.Forms
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminControlForm form = new AdminControlForm();
+            form.ShowDialog();
+            this.Close();
         }
     }
 }
