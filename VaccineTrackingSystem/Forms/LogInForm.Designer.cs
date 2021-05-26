@@ -37,6 +37,7 @@
             this.IsUser = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.LogInNationlID = new System.Windows.Forms.TextBox();
+            this.ShowPassword = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // LogIn
@@ -71,10 +72,11 @@
             // 
             // LogInPassword
             // 
-            this.LogInPassword.Location = new System.Drawing.Point(122, 131);
+            this.LogInPassword.Location = new System.Drawing.Point(120, 128);
             this.LogInPassword.Name = "LogInPassword";
             this.LogInPassword.Size = new System.Drawing.Size(186, 20);
             this.LogInPassword.TabIndex = 5;
+            this.LogInPassword.UseSystemPasswordChar = true;
             // 
             // IsAdmin
             // 
@@ -128,7 +130,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(7, 72);
+            this.label1.Location = new System.Drawing.Point(4, 81);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(134, 29);
             this.label1.TabIndex = 11;
@@ -136,10 +138,24 @@
             // 
             // LogInNationlID
             // 
-            this.LogInNationlID.Location = new System.Drawing.Point(141, 81);
+            this.LogInNationlID.Location = new System.Drawing.Point(144, 90);
             this.LogInNationlID.Name = "LogInNationlID";
             this.LogInNationlID.Size = new System.Drawing.Size(167, 20);
             this.LogInNationlID.TabIndex = 12;
+            // 
+            // ShowPassword
+            // 
+            this.ShowPassword.AutoSize = true;
+            this.ShowPassword.BackColor = System.Drawing.Color.Transparent;
+            this.ShowPassword.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
+            this.ShowPassword.ForeColor = System.Drawing.Color.White;
+            this.ShowPassword.Location = new System.Drawing.Point(323, 121);
+            this.ShowPassword.Name = "ShowPassword";
+            this.ShowPassword.Size = new System.Drawing.Size(83, 33);
+            this.ShowPassword.TabIndex = 13;
+            this.ShowPassword.Text = "Show";
+            this.ShowPassword.UseVisualStyleBackColor = false;
+            this.ShowPassword.CheckedChanged += new System.EventHandler(this.ShowPassword_CheckedChanged);
             // 
             // LogInForm
             // 
@@ -148,6 +164,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ShowPassword);
             this.Controls.Add(this.LogInNationlID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.IsUser);
@@ -173,6 +190,7 @@
         private System.Windows.Forms.RadioButton IsUser;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox LogInNationlID;
+        private System.Windows.Forms.CheckBox ShowPassword;
     }
 }
 

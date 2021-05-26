@@ -66,5 +66,15 @@ namespace VaccineTrackingSystem
             this.Close();
         }
 
+        private void ShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+
+            if (ShowPassword.Checked)
+            {
+                LogInPassword.UseSystemPasswordChar = false;
+            }
+            else
+                LogInPassword.UseSystemPasswordChar = true;
+        }
     }
 }

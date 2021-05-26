@@ -56,7 +56,6 @@ C:\Users\user.NB1129\Documents\GitHub\Vaccine-Tracking-System\VaccineTrackingSys
 C:\Users\user.NB1129\Documents\GitHub\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.AdminForm.resources
 C:\Users\user.NB1129\Documents\GitHub\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.LogInForm.resources
 C:\Users\user.NB1129\Documents\GitHub\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.StatisticsForm.resources
-C:\Users\user.NB1129\Documents\GitHub\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.UserForm.resources
 C:\Users\user.NB1129\Documents\GitHub\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.ListItem.resources
 C:\Users\user.NB1129\Documents\GitHub\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Properties.Resources.resources
 C:\Users\user.NB1129\Documents\GitHub\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.csproj.GenerateResource.cache
@@ -73,3 +72,7 @@ C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\Vac
 C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.UserUpdateForm.resources
 C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.WaitingForVaccinationForm.resources
 C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.ListItem.resources
+C:\Users\user.NB1129\Documents\GitHub\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.UserAddingForm.resources
+C:\Users\user.NB1129\Documents\GitHub\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.UserForm.resources
+C:\Users\user.NB1129\Documents\GitHub\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.UserUpdateForm.resources
+C:\Users\user.NB1129\Documents\GitHub\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.WaitingForVaccinationForm.resources
