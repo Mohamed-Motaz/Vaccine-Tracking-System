@@ -17,11 +17,10 @@ namespace VaccineTrackingSystem.Forms
         {
             InitializeComponent();
         }
-
         private void AdminControlForm_Load(object sender, EventArgs e)
         {
 
-            userBindingSource.DataSource = tmp;
+            userBindingSource.DataSource = DataContainer.Users;
         }
 
         private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -31,7 +30,9 @@ namespace VaccineTrackingSystem.Forms
                 if (MessageBox.Show("Are you sure you want to delete this customer ?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     MessageBox.Show(((User)userBindingSource.Current).Country);
+                    User tmpUser = (User)userBindingSource.Current;
                     userBindingSource.RemoveCurrent();
+                    User.HandleUserDelete(tmpUser);
                 }
             }
         }
@@ -41,15 +42,15 @@ namespace VaccineTrackingSystem.Forms
 
             if (searchTextBox.Text.Length == 0)
             {
-                userBindingSource.DataSource = tmp;
+                userBindingSource.DataSource = DataContainer.Users;
 
             }
             else
             {
                 List<User> newUsers = new List<User>();
-                foreach(User usr in tmp)
+                foreach(User usr in DataContainer.Users)
                 {
-                    if (usr.UserName.ToLower().Contains(searchTextBox.Text))
+                    if (usr.NationalID.Contains(searchTextBox.Text))
                     {
 
                         newUsers.Add(usr);
@@ -61,6 +62,11 @@ namespace VaccineTrackingSystem.Forms
         }
 
         private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void DeleteAllRecords_Click(object sender, EventArgs e)
         {
             DataContainer.Users.Clear();
             userBindingSource.DataSource = DataContainer.Users;

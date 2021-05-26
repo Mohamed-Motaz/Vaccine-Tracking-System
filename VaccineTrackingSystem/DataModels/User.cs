@@ -34,7 +34,7 @@ namespace VaccineTrackingSystem.DataModels
         public static void HandleUserAddition(User user)
         {
             DataContainer.Users.Add(user);
-            DataContainer.UsersMap[user.NationalID]=user;
+            DataContainer.UsersMap.Add(user.NationalID, user);
             if(user.Vaccinated==0)
                 DataContainer.CurrentlyWaiting.Add(user);
         }

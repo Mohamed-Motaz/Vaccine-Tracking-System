@@ -30,6 +30,7 @@ namespace VaccineTrackingSystem.Forms
         {
             DataContainer.CurrentUser = null; //make sure current user is no longer logged in
             User.HandleUserDelete(DataContainer.CurrentUser);
+            MessageBox.Show("User successfully deleted");
             this.Hide();
             LogInForm form = new LogInForm();
             form.ShowDialog();

@@ -32,6 +32,10 @@ namespace VaccineTrackingSystem
             User user = FillUserData();
             User.HandleUserAddition(user);
             MessageBox.Show("User Successfully Added");
+            this.Hide();
+            LogInForm form = new LogInForm();
+            form.ShowDialog();
+            this.Close();
         }
         private void FillEgyptianGovernorates()
         {
@@ -69,11 +73,14 @@ namespace VaccineTrackingSystem
             }
             if (DataContainer.UsersMap.ContainsKey(UserNationalID.Text))
             {
-                MessageBox.Show("This National ID entered before");
+                MessageBox.Show("National ID already exists");
                 return false;
             }
-            if (!IsAllDigits(UserNationalID.Text))
+            try
             {
+                Convert.ToInt64(UserNationalID.Text);
+            }catch (Exception e) 
+            { 
                 MessageBox.Show("National ID should only be digits");
                 return false;
             }

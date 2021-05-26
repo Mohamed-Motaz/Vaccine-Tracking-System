@@ -11,7 +11,6 @@ namespace VaccineTrackingSystem.DataModels
     {
         public static string AdminPassword = "admin";
         public static List<User> CurrentlyWaiting = new List<User>();
-        public static Dictionary<string, User> UsersMap = new Dictionary<string, User>();
         public static User CurrentUser;
         public static HashSet<String> EgyptianGovernorates = new HashSet<string>()
         {
@@ -20,7 +19,73 @@ namespace VaccineTrackingSystem.DataModels
             "Monufia", "New Valley", "North Sinai", "Port Said", "Qalyubia", "Qena", "Red Sea",
             "Sharqia", "Sohag", "South Sinai", "Suez"
         };
-        
+        public static List<User> Users = new List<User>() { 
+        new User()
+        {
+            UserName = "Mohamed Motaz",
+            NationalID = "0000000000000",
+            Password = "password",
+            Gender = "Male",
+            Age = 15,
+            Governorate = "Giza",
+            Vaccinated = 0
+        },
+        new User()
+        {
+            UserName = "Ali Agina",
+            NationalID = "1111111111111",
+            Password = "password",
+            Gender = "Male",
+            Age = 15,
+            Governorate = "Giza",
+            Vaccinated = 1
+        },
+        new User()
+        {
+            UserName = "Kareem Ezzat",
+            NationalID = "1000000000000",
+            Password = "password",
+            Gender = "Male",
+            Age = 15,
+            Governorate = "Giza",
+            Vaccinated = 2
+        },
+        new User()
+        {
+            UserName = "AbdelAzim",
+            NationalID = "0100000000000",
+            Password = "password",
+            Gender = "Male",
+            Age = 15,
+            Governorate = "Giza",
+            Vaccinated = 1
+        }, 
+        new User()
+        {
+            UserName = "Rawan Ahmed",
+            NationalID = "0010000000000",
+            Password = "password",
+            Gender = "Female",
+            Age = 15,
+            Governorate = "Giza",
+            Vaccinated = 1
+        }, 
+        new User()
+        {
+            UserName = "Salma Tarek",
+            NationalID = "000100000000",
+            Password = "password",
+            Gender = "Female",
+            Age = 15,
+            Governorate = "Giza",
+            Vaccinated = 1
+        },
+        };
+        public static Dictionary<string, User> UsersMap = new Dictionary<string, User>() 
+        { { "0000000000000", Users[0] }, {"1111111111111", Users[1]}, {"1000000000000", Users[2]},
+            {"0100000000000", Users[3] }, {"0010000000000", Users[4]}, {"0001000000000", Users[5]}
+        };
+
 
     }
 }

@@ -207,11 +207,10 @@
             this.Female.BackColor = System.Drawing.Color.Transparent;
             this.Female.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
             this.Female.ForeColor = System.Drawing.Color.White;
-            this.Female.Location = new System.Drawing.Point(6, 34);
+            this.Female.Location = new System.Drawing.Point(133, 34);
             this.Female.Name = "Female";
             this.Female.Size = new System.Drawing.Size(99, 33);
             this.Female.TabIndex = 29;
-            this.Female.TabStop = true;
             this.Female.Text = "Female";
             this.Female.UseVisualStyleBackColor = false;
             // 
@@ -219,9 +218,10 @@
             // 
             this.Male.AutoSize = true;
             this.Male.BackColor = System.Drawing.Color.Transparent;
+            this.Male.Checked = true;
             this.Male.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
             this.Male.ForeColor = System.Drawing.Color.White;
-            this.Male.Location = new System.Drawing.Point(139, 34);
+            this.Male.Location = new System.Drawing.Point(6, 34);
             this.Male.Name = "Male";
             this.Male.Size = new System.Drawing.Size(78, 33);
             this.Male.TabIndex = 30;
@@ -262,6 +262,7 @@
             // 
             this.Zero.AutoSize = true;
             this.Zero.BackColor = System.Drawing.Color.Transparent;
+            this.Zero.Checked = true;
             this.Zero.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
             this.Zero.ForeColor = System.Drawing.Color.White;
             this.Zero.Location = new System.Drawing.Point(6, 34);

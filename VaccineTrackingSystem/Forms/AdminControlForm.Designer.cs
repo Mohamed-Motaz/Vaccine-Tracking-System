@@ -155,6 +155,7 @@
             this.DeleteAllRecords.Text = "Delete All Records";
             this.DeleteAllRecords.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.DeleteAllRecords.UseVisualStyleBackColor = false;
+            this.DeleteAllRecords.Click += new System.EventHandler(this.DeleteAllRecords_Click);
             // 
             // BackBtn
             // 

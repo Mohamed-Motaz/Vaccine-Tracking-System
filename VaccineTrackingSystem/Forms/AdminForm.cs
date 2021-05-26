@@ -46,5 +46,10 @@ namespace VaccineTrackingSystem.Forms
             form.ShowDialog();
             this.Close();
         }
+
+        private void BackBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

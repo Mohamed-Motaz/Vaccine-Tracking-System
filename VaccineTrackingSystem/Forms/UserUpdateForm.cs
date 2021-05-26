@@ -21,6 +21,8 @@ namespace VaccineTrackingSystem.Forms
         private void UserUpdateForm_Load(object sender, EventArgs e)
         {
             FillEgyptianGovernorates();
+            FillFormData();
+
         }     
         private void UserUpdating_Click(object sender, EventArgs e)
         {
@@ -30,12 +32,36 @@ namespace VaccineTrackingSystem.Forms
             FillUserData(ref DataContainer.CurrentUser);
             User.HandleUserUpdate(DataContainer.CurrentUser);
             MessageBox.Show("User Successfully Updated");
+            this.Hide();
+            LogInForm form = new LogInForm();
+            form.ShowDialog();
+            this.Close();
+            DataContainer.CurrentUser = null;
         }        
         private void FillEgyptianGovernorates()
         {
             int ctr = 0;
             foreach (string governorate in DataContainer.EgyptianGovernorates)
                 UpdatedUserGovernorate.Items.Insert(ctr++, governorate);
+        }
+        private void FillFormData()
+        {
+            UpdatedUserName.Text = DataContainer.CurrentUser.UserName;
+            UpdatedUserGovernorate.Text = DataContainer.CurrentUser.Governorate;
+            UpdatedUserPassword.Text = DataContainer.CurrentUser.Password;
+            UpdatedUserCountry.Text = DataContainer.CurrentUser.Country;
+            UpdatedUserAge.Text = DataContainer.CurrentUser.Age.ToString();
+            if (DataContainer.CurrentUser.Gender == "Male")
+                Male.Checked = true;
+            else
+                Female.Checked = true;
+            if (DataContainer.CurrentUser.Vaccinated == 0)
+                Zero.Checked = true;
+            else if (DataContainer.CurrentUser.Vaccinated == 1)
+                One.Checked = true;
+            else
+                Two.Checked = true;
+
         }
         private void FillUserData(ref User user)
         {
