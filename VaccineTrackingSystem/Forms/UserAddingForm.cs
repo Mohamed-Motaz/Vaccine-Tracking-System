@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using VaccineTrackingSystem.DataModels ;
+using VaccineTrackingSystem.DataModels;
+
 namespace VaccineTrackingSystem
 {
     public partial class UserAddingForm : Form
@@ -110,6 +111,14 @@ namespace VaccineTrackingSystem
             return true;
         }
 
+        private void BackBtn_Click(object sender, EventArgs e)
+        {
+            DataContainer.CurrentUser = null;
+            this.Hide();
+            LogInForm form = new LogInForm();
+            form.ShowDialog();
+            this.Close();
+        }
     }
 
 }

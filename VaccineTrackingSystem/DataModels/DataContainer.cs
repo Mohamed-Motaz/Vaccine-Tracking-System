@@ -10,7 +10,6 @@ namespace VaccineTrackingSystem.DataModels
     class DataContainer
     {
         public static string AdminPassword = "admin";
-        public static List<User> Users = new List<User>();
         public static List<User> CurrentlyWaiting = new List<User>();
         public static Dictionary<string, User> UsersMap = new Dictionary<string, User>();
         public static User CurrentUser;
@@ -21,6 +20,7 @@ namespace VaccineTrackingSystem.DataModels
             "Monufia", "New Valley", "North Sinai", "Port Said", "Qalyubia", "Qena", "Red Sea",
             "Sharqia", "Sohag", "South Sinai", "Suez"
         };
+        
 
     }
 }

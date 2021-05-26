@@ -87,6 +87,7 @@ namespace VaccineTrackingSystem.Forms
             this.BackBtn.Text = "Back";
             this.BackBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BackBtn.UseVisualStyleBackColor = false;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
             // UserForm
             // 

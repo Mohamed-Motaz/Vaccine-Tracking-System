@@ -44,9 +44,9 @@ namespace VaccineTrackingSystem.Forms
             this.label2 = new System.Windows.Forms.Label();
             this.UpdatedUserGovernorate = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.Two = new System.Windows.Forms.RadioButton();
+            this.Zero = new System.Windows.Forms.RadioButton();
+            this.One = new System.Windows.Forms.RadioButton();
             this.UserUpdating = new System.Windows.Forms.Button();
             this.BackBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -195,8 +195,8 @@ namespace VaccineTrackingSystem.Forms
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.Two);
-            this.groupBox2.Controls.Add(this.radioButton1);
-            this.groupBox2.Controls.Add(this.radioButton2);
+            this.groupBox2.Controls.Add(this.Zero);
+            this.groupBox2.Controls.Add(this.One);
             this.groupBox2.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(31, 292);
@@ -205,34 +205,6 @@ namespace VaccineTrackingSystem.Forms
             this.groupBox2.TabIndex = 37;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Vaccinated";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton1.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
-            this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(6, 34);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(44, 33);
-            this.radioButton1.TabIndex = 29;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "0";
-            this.radioButton1.UseVisualStyleBackColor = false;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton2.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
-            this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(83, 34);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(40, 33);
-            this.radioButton2.TabIndex = 30;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "1";
-            this.radioButton2.UseVisualStyleBackColor = false;
             // 
             // Two
             // 
@@ -247,6 +219,34 @@ namespace VaccineTrackingSystem.Forms
             this.Two.TabStop = true;
             this.Two.Text = "2";
             this.Two.UseVisualStyleBackColor = false;
+            // 
+            // Zero
+            // 
+            this.Zero.AutoSize = true;
+            this.Zero.BackColor = System.Drawing.Color.Transparent;
+            this.Zero.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
+            this.Zero.ForeColor = System.Drawing.Color.White;
+            this.Zero.Location = new System.Drawing.Point(6, 34);
+            this.Zero.Name = "Zero";
+            this.Zero.Size = new System.Drawing.Size(44, 33);
+            this.Zero.TabIndex = 29;
+            this.Zero.TabStop = true;
+            this.Zero.Text = "0";
+            this.Zero.UseVisualStyleBackColor = false;
+            // 
+            // One
+            // 
+            this.One.AutoSize = true;
+            this.One.BackColor = System.Drawing.Color.Transparent;
+            this.One.Font = new System.Drawing.Font("Comic Sans MS", 15.75F);
+            this.One.ForeColor = System.Drawing.Color.White;
+            this.One.Location = new System.Drawing.Point(83, 34);
+            this.One.Name = "One";
+            this.One.Size = new System.Drawing.Size(40, 33);
+            this.One.TabIndex = 30;
+            this.One.TabStop = true;
+            this.One.Text = "1";
+            this.One.UseVisualStyleBackColor = false;
             // 
             // UserUpdating
             // 
@@ -264,6 +264,7 @@ namespace VaccineTrackingSystem.Forms
             this.UserUpdating.Text = "Update";
             this.UserUpdating.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.UserUpdating.UseVisualStyleBackColor = false;
+            this.UserUpdating.Click += new System.EventHandler(this.UserUpdating_Click);
             // 
             // BackBtn
             // 
@@ -281,6 +282,7 @@ namespace VaccineTrackingSystem.Forms
             this.BackBtn.Text = "Back";
             this.BackBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BackBtn.UseVisualStyleBackColor = false;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
             // UserUpdateForm
             // 
@@ -305,6 +307,7 @@ namespace VaccineTrackingSystem.Forms
             this.Controls.Add(this.label9);
             this.Name = "UserUpdateForm";
             this.Text = "UserUpdateForm";
+            this.Load += new System.EventHandler(this.UserUpdateForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -330,8 +333,8 @@ namespace VaccineTrackingSystem.Forms
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox UpdatedUserGovernorate;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton Zero;
+        private System.Windows.Forms.RadioButton One;
         private System.Windows.Forms.RadioButton Two;
         private System.Windows.Forms.Button UserUpdating;
         private System.Windows.Forms.Button BackBtn;

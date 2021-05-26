@@ -20,16 +20,7 @@ namespace VaccineTrackingSystem.DataModels
 
         public static void HandleUserUpdate(User user)
         {
-            Boolean vaccined = false;
-            if (DataContainer.UsersMap.ContainsKey(user.NationalID))
-            {
-                if (user.Vaccinated != DataContainer.UsersMap[user.NationalID].Vaccinated && DataContainer.UsersMap[user.NationalID].Vaccinated == 0)
-                    vaccined = true;
-
-                DataContainer.UsersMap[user.NationalID] = user;
-            }
-
-            if (vaccined)
+            if (user.Vaccinated > 0)
                 DataContainer.CurrentlyWaiting.Remove(user);
         }
         public static void HandleUserDelete(User user)
@@ -38,6 +29,7 @@ namespace VaccineTrackingSystem.DataModels
             DataContainer.CurrentlyWaiting.Remove(tmpUser);
             DataContainer.Users.Remove(tmpUser);
             DataContainer.UsersMap.Remove(tmpUser.NationalID);
+            DataContainer.CurrentUser = null;
         }
         public static void HandleUserAddition(User user)
         {

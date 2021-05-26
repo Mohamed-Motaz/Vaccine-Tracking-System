@@ -21,19 +21,29 @@ namespace VaccineTrackingSystem.Forms
         private void UserUpdate_Click(object sender, EventArgs e)
         {
             this.Hide();
-            UserForm form = new UserForm();
+            UserUpdateForm form = new UserUpdateForm();
             form.ShowDialog();
             this.Close();
         }
 
         private void UserDelete_Click(object sender, EventArgs e)
         {
+            DataContainer.CurrentUser = null; //make sure current user is no longer logged in
             User.HandleUserDelete(DataContainer.CurrentUser);
             this.Hide();
             LogInForm form = new LogInForm();
             form.ShowDialog();
             this.Close();
             
+        }
+
+        private void BackBtn_Click(object sender, EventArgs e)
+        {
+            DataContainer.CurrentUser = null; //make sure current user is no longer logged in
+            this.Hide();
+            LogInForm form = new LogInForm();
+            form.ShowDialog();
+            this.Close();
         }
     }
 }

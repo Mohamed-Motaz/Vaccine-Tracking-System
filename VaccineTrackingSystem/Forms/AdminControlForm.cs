@@ -13,65 +13,6 @@ namespace VaccineTrackingSystem.Forms
 {
     public partial class AdminControlForm : Form
     {
-        List<User> tmp = new List<User>() { new User()
-            {
-                UserName = "Mohamed Motaz",
-                NationalID = "hscdjkcd",
-                Password = "dcnlkc",
-                Gender = "Male",
-                Age = 15,
-                Governorate = "Giza",
-                Vaccinated = 1
-        },
-        new User()
-        {
-            UserName = "Ali Agina",
-                NationalID = "hscdjkcd",
-                Password = "dcnlkc",
-                Gender = "Male",
-                Age = 15,
-                Governorate = "Giza",
-                Vaccinated = 1
-            },
-          new User()
-        {
-            UserName = "Kareem Ezzat",
-                NationalID = "hscdjkcd",
-                Password = "dcnlkc",
-                Gender = "Male",
-                Age = 15,
-                Governorate = "Giza",
-                Vaccinated = 1
-            },
-            new User()
-        {
-            UserName = "AbdelAzim",
-                NationalID = "hscdjkcd",
-                Password = "dcnlkc",
-                Gender = "Male",
-                Age = 15,
-                Governorate = "Giza",
-                Vaccinated = 1
-            }, new User()
-        {
-            UserName = "Rawan Ahmed",
-                NationalID = "hscdjkcd",
-                Password = "dcnlkc",
-                Gender = "Male",
-                Age = 15,
-                Governorate = "Giza",
-                Vaccinated = 1
-            }, new User()
-        {
-            UserName = "Salma Tarek",
-                NationalID = "hscdjkcd",
-                Password = "dcnlkc",
-                Gender = "Male",
-                Age = 15,
-                Governorate = "Giza",
-                Vaccinated = 1
-            },
-            };
         public AdminControlForm()
         {
             InitializeComponent();
