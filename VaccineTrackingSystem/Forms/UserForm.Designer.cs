@@ -51,6 +51,7 @@ namespace VaccineTrackingSystem.Forms
             this.UserUpdate.Text = "Update";
             this.UserUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.UserUpdate.UseVisualStyleBackColor = false;
+            this.UserUpdate.Click += new System.EventHandler(this.UserUpdate_Click);
             // 
             // UserDelete
             // 
@@ -68,6 +69,7 @@ namespace VaccineTrackingSystem.Forms
             this.UserDelete.Text = "Delete";
             this.UserDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.UserDelete.UseVisualStyleBackColor = false;
+            this.UserDelete.Click += new System.EventHandler(this.UserDelete_Click);
             // 
             // BackBtn
             // 

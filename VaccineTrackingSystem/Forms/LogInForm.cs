@@ -21,57 +21,50 @@ namespace VaccineTrackingSystem
 
         private void LogIn_Click(object sender, EventArgs e)
         {
-
             if (IsAdmin.Checked)
-            {
-                if (LogInPassword.Text == DataContainer.adminPassword)
+                if (LogInPassword.Text == DataContainer.AdminPassword)
                 {
+                    this.Hide();                    
                     AdminForm form = new AdminForm();
-                    form.Show();
+                    form.ShowDialog();
+                    this.Close();
                 }
                 else
-                    MessageBox.Show("Password is wrong!");
-
-
-            }
+                    MessageBox.Show("Password is incorrect!");
             else
             {
-                Boolean found = false;
+                bool found = false;
+                User tempUser = new User();
 
-                User temp = new User();
-
-
-                if (DataContainer.usersMap.ContainsKey(LogInNationlID.Text))
+                if (DataContainer.UsersMap.ContainsKey(LogInNationlID.Text))
                 {
-                    temp = DataContainer.usersMap[LogInNationlID.Text];
+                    tempUser = DataContainer.UsersMap[LogInNationlID.Text];
                     found = true;
                 }
 
                 if (found)
-                {
-                    if (LogInPassword.Text == temp.Password)
+                    if (LogInPassword.Text == tempUser.Password)
                     {
-                        DataContainer.currentUser = temp;
+                        DataContainer.CurrentUser = tempUser;
+                        this.Hide();
                         UserForm form = new UserForm();
-                        form.Show();
+                        form.ShowDialog();
+                        this.Close();
                     }
                     else
-                        MessageBox.Show("Password is wrong!");
-
-                }
+                        MessageBox.Show("Password is incorrect!");
                 else
-                    MessageBox.Show("National ID is wrong!");
-
-
+                    MessageBox.Show("National ID is incorrect!");
             }
-
-
         }
 
         private void SignUp_Click(object sender, EventArgs e)
         {
+            this.Hide();
             UserAddingForm form = new UserAddingForm();
-            form.Show();
+            form.ShowDialog();
+            this.Close();
         }
+
     }
 }

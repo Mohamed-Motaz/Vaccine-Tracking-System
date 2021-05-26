@@ -121,8 +121,8 @@ namespace VaccineTrackingSystem.Forms
 
         private void deleteBtn_Click(object sender, EventArgs e)
         {
-            DataContainer.users.Clear();
-            userBindingSource.DataSource = DataContainer.users;
+            DataContainer.Users.Clear();
+            userBindingSource.DataSource = DataContainer.Users;
         }
     }
 }

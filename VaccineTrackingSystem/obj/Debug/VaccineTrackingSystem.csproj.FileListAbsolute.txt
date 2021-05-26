@@ -33,7 +33,6 @@ D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\bin\Debug\VaccineTr
 C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.AdminForm.resources
 C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.LogInForm.resources
 C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.StatisticsForm.resources
-C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.UserForm.resources
 D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.StatisticsForm.resources
 C:\Users\DELL\Desktop\project\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.csprojAssemblyReference.cache
 C:\Users\DELL\Desktop\project\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.AdminControlForm.resources
@@ -69,3 +68,8 @@ D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTr
 D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.WaitingForVaccinationForm.resources
 D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.ListItem.resources
 D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.UserUpdateForm.resources
+C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.UserAddingForm.resources
+C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.UserForm.resources
+C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.UserUpdateForm.resources
+C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.WaitingForVaccinationForm.resources
+C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.ListItem.resources

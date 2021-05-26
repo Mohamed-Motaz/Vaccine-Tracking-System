@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataModels\Admin.cs" />
     <Compile Include="DataModels\DataContainer.cs" />
     <Compile Include="DataModels\User.cs" />
     <Compile Include="Forms\AdminControlForm.cs">
@@ -107,30 +106,39 @@
     </Compile>
     <EmbeddedResource Include="Forms\AdminControlForm.resx">
       <DependentUpon>AdminControlForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LogInForm.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\StatisticsForm.resx">
       <DependentUpon>StatisticsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserAddingForm.resx">
       <DependentUpon>UserAddingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserForm.resx">
       <DependentUpon>UserForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserUpdateForm.resx">
       <DependentUpon>UserUpdateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\WaitingForVaccinationForm.resx">
       <DependentUpon>WaitingForVaccinationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="ListItem.resx">
       <DependentUpon>ListItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

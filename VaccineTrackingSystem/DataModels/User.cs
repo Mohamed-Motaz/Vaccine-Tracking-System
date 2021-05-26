@@ -18,40 +18,33 @@ namespace VaccineTrackingSystem.DataModels
         public string Governorate { get; set; } = "";
         public int Vaccinated { get; set; } = 0; //stands for number of doses taken, 0, 1, or 2
 
-
-        //general functions
-
-        //handle updating user information
-        //should handle removing and adding to waiting list
-
         public static void HandleUserUpdate(User user)
         {
             Boolean vaccined = false;
-
-            if (DataContainer.usersMap.ContainsKey(user.NationalID))
+            if (DataContainer.UsersMap.ContainsKey(user.NationalID))
             {
-                if (user.Vaccinated != DataContainer.usersMap[user.NationalID].Vaccinated && DataContainer.usersMap[user.NationalID].Vaccinated == 0)
+                if (user.Vaccinated != DataContainer.UsersMap[user.NationalID].Vaccinated && DataContainer.UsersMap[user.NationalID].Vaccinated == 0)
                     vaccined = true;
 
-                DataContainer.usersMap[user.NationalID] = user;
-
+                DataContainer.UsersMap[user.NationalID] = user;
             }
 
             if (vaccined)
-                DataContainer.currentlyWaiting.Remove(user);
+                DataContainer.CurrentlyWaiting.Remove(user);
         }
         public static void HandleUserDelete(User user)
         {
-            DataContainer.currentlyWaiting.Remove(user);
-            DataContainer.users.Remove(user);
-            DataContainer.usersMap.Remove(user.NationalID);
+            User tmpUser = DataContainer.UsersMap[user.NationalID];
+            DataContainer.CurrentlyWaiting.Remove(tmpUser);
+            DataContainer.Users.Remove(tmpUser);
+            DataContainer.UsersMap.Remove(tmpUser.NationalID);
         }
-        public static void HandleUserAdding(User user)
+        public static void HandleUserAddition(User user)
         {
-            DataContainer.users.Add(user);
-            DataContainer.usersMap[user.NationalID]=user;
+            DataContainer.Users.Add(user);
+            DataContainer.UsersMap[user.NationalID]=user;
             if(user.Vaccinated==0)
-                DataContainer.currentlyWaiting.Add(user);
+                DataContainer.CurrentlyWaiting.Add(user);
         }
     }
 }

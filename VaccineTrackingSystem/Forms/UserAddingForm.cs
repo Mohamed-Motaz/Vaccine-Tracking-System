@@ -20,55 +20,85 @@ namespace VaccineTrackingSystem
 
         private void UserForm_Load(object sender, EventArgs e)
         {
-            UserGovernorate.Items.Insert(0, "Cairo");
-            UserGovernorate.Items.Insert(1, "Alexandria");
-            UserGovernorate.Items.Insert(2, "Aswan");
-            UserGovernorate.Items.Insert(3, "Asyut");
-            UserGovernorate.Items.Insert(4, "Beheira");
-            UserGovernorate.Items.Insert(5, "Beni Suef");
-            UserGovernorate.Items.Insert(6, "Dakahlia");
-            UserGovernorate.Items.Insert(7, "Damietta");
-            UserGovernorate.Items.Insert(8, "Faiyum");
-            UserGovernorate.Items.Insert(9, "Gharbia");
-            UserGovernorate.Items.Insert(10, "Giza");
-            UserGovernorate.Items.Insert(11, "Ismailia");
-            UserGovernorate.Items.Insert(12, "Kafr El Sheikh");
-            UserGovernorate.Items.Insert(13, "Luxor");
-            UserGovernorate.Items.Insert(14, "Matruh");
-            UserGovernorate.Items.Insert(15, "Minya");
-            UserGovernorate.Items.Insert(16, "Monufia");
-            UserGovernorate.Items.Insert(17, "New Valley");
-            UserGovernorate.Items.Insert(18, "North Sinai");
-            UserGovernorate.Items.Insert(19, "Port Said");
-            UserGovernorate.Items.Insert(20, "Qalyubia");
-            UserGovernorate.Items.Insert(21, "Qena");
-            UserGovernorate.Items.Insert(22, "Red Sea");
-            UserGovernorate.Items.Insert(23, "Sharqia");
-            UserGovernorate.Items.Insert(24, "Sohag");
-            UserGovernorate.Items.Insert(25, "South Sinai");
-            UserGovernorate.Items.Insert(26, "Suez");
-          
+            FillEgyptianGovernorates();
         }
-          public bool Validation() {
-            if (UserNationalID.Text.Length!=13)
 
+        private void UserAdding_Click(object sender, EventArgs e)
+        {
+            if (!Validate())
+                return;
+
+            User user = FillUserData();
+            User.HandleUserAddition(user);
+            MessageBox.Show("User Successfully Added");
+        }
+        private void FillEgyptianGovernorates()
+        {
+            int ctr = 0;
+            foreach (string governorate in DataContainer.EgyptianGovernorates)
+                UserGovernorate.Items.Insert(ctr++, governorate);
+        }
+        private User FillUserData()
+        {
+            User user = new User();
+            user.UserName = UserName.Text;
+            user.NationalID = UserNationalID.Text;
+            user.Governorate = UserGovernorate.Text;
+            user.Password = UserPassword.Text;
+            user.Country = UserCountry.Text;
+            user.Age = Convert.ToInt32(UserAge.Text);
+            if (Female.Checked)
+                user.Gender = "Female";
+            else if (Male.Checked)
+                user.Gender = "Male";
+            if (Zero.Checked)
+                user.Vaccinated = 0;
+            else if (One.Checked)
+                user.Vaccinated = 1;
+            else if (Two.Checked)
+                user.Vaccinated = 2;
+            return user;
+        }
+        public bool Validate()
+        {
+            if (UserNationalID.Text.Length != 13)
             {
-                MessageBox.Show("Enter 13 number");
-
+                MessageBox.Show("Enter 13 numbers for the National ID");
                 return false;
             }
-                if (DataContainer.usersMap.ContainsKey(UserNationalID.Text))
-                {
-                    MessageBox.Show("This NationalId Entered Before");
-                    return false;
-                }
+            if (DataContainer.UsersMap.ContainsKey(UserNationalID.Text))
+            {
+                MessageBox.Show("This National ID entered before");
+                return false;
+            }
             if (!IsAllDigits(UserNationalID.Text))
             {
+                MessageBox.Show("National ID should only be digits");
+                return false;
+            }
+            int age;
+            try
+            {
+                age = Convert.ToInt32(UserAge.Text);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Age should only be digits");
+                return false;
+
+            }
+            if (age < 0 || age > 110)
+            {
+                MessageBox.Show("Enter Age Between 1 and 110");
+                return false;
+            }
+            if (!DataContainer.EgyptianGovernorates.Contains(UserGovernorate.Text))
+            {
+                MessageBox.Show("Governorate must be in Egypt");
                 return false;
             }
             return true;
-            }
-
+        }
         bool IsAllDigits(string s)
         {
             foreach (char c in s)
@@ -80,66 +110,6 @@ namespace VaccineTrackingSystem
             return true;
         }
 
-        private void UserGovernorate_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void UserAdding_Click(object sender, EventArgs e)
-        {
-            int age;
-
-            if (!Validate())
-            {
-                return;
-            }
-
-            User user = new User();
-            user.UserName = UserName.Text;
-            user.NationalID = UserNationalID.Text;
-            user.Governorate = UserGovernorate.Text;
-            user.Password = UserPassword.Text;
-            user.Country = UserCountry.Text;
-            if (IsAllDigits(UserAge.Text))
-            {
-
-                age = Convert.ToInt32(UserAge.Text);
-                if (age < 0 || age > 110)
-                {
-                    MessageBox.Show("Enter Age Between 1 and 110");
-                    return;
-                }
-            }
-            else
-            {
-                return;
-            }
-            user.Age = age;
-
-            if (Female.Checked)
-            {
-                user.Gender = "Female";
-            }
-            else if (Male.Checked)
-            {
-                user.Gender = "Male";
-            }
-
-            if (Zero.Checked)
-            {
-                user.Vaccinated = 0;
-            }
-            else if (One.Checked)
-            {
-                user.Vaccinated = 1;
-            }
-            else if (Two.Checked)
-            {
-                user.Vaccinated = 2;
-            }
-            User.HandleUserAdding(user);
-            MessageBox.Show("User Added ^-^");
-        }
     }
 
 }

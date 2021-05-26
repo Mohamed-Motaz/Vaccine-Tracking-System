@@ -25,20 +25,26 @@ namespace VaccineTrackingSystem.Forms
 
         private void WaitingList_Click(object sender, EventArgs e)
         {
+            this.Hide();
             WaitingForVaccinationForm form = new WaitingForVaccinationForm();
-            form.Show();
+            form.ShowDialog();
+            this.Close();
         }
 
         private void Statistics_Click(object sender, EventArgs e)
         {
+            this.Hide();
             StatisticsForm form = new StatisticsForm();
-            form.Show();
+            form.ShowDialog();
+            this.Close();
         }
 
         private void UserControl_Click(object sender, EventArgs e)
         {
+            this.Hide();
             AdminControlForm form = new AdminControlForm();
-            form.Show();
+            form.ShowDialog();
+            this.Close();
         }
     }
 }

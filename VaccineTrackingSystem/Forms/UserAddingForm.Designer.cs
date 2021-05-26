@@ -89,7 +89,6 @@
             this.UserGovernorate.Name = "UserGovernorate";
             this.UserGovernorate.Size = new System.Drawing.Size(144, 21);
             this.UserGovernorate.TabIndex = 13;
-            this.UserGovernorate.SelectedIndexChanged += new System.EventHandler(this.UserGovernorate_SelectedIndexChanged);
             // 
             // UserAdding
             // 
