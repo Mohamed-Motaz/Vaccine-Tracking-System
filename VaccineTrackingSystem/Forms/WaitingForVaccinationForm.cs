@@ -20,6 +20,7 @@ namespace VaccineTrackingSystem.Forms
         
         private void WaitingForVaccinationForm_Load(object sender, EventArgs e)
         {
+            //Console.WriteLine(DataContainer.CurrentlyWaiting.Count);
 
             foreach(User newUser in DataContainer.CurrentlyWaiting)
             {
@@ -29,7 +30,7 @@ namespace VaccineTrackingSystem.Forms
                 newList.pass = newUser.Password;
                 newList.Gender = newUser.Gender;
                 newList.age = newUser.Age;
-                newList.contry = newUser.Governorate;
+                newList.country = newUser.Governorate;
                
 
                 if (flowLayoutPanel1.Controls.Count < 0)

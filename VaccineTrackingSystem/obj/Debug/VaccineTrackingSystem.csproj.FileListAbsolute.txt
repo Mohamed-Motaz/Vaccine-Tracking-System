@@ -76,3 +76,20 @@ C:\Users\user.NB1129\Documents\GitHub\Vaccine-Tracking-System\VaccineTrackingSys
 C:\Users\user.NB1129\Documents\GitHub\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.UserForm.resources
 C:\Users\user.NB1129\Documents\GitHub\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.UserUpdateForm.resources
 C:\Users\user.NB1129\Documents\GitHub\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.WaitingForVaccinationForm.resources
+D:\Computer Sceince\DS project\Vaccine-Tracking-System\VaccineTrackingSystem\bin\Debug\VaccineTrackingSystem.exe.config
+D:\Computer Sceince\DS project\Vaccine-Tracking-System\VaccineTrackingSystem\bin\Debug\VaccineTrackingSystem.exe
+D:\Computer Sceince\DS project\Vaccine-Tracking-System\VaccineTrackingSystem\bin\Debug\VaccineTrackingSystem.pdb
+D:\Computer Sceince\DS project\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.csprojAssemblyReference.cache
+D:\Computer Sceince\DS project\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.AdminControlForm.resources
+D:\Computer Sceince\DS project\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.AdminForm.resources
+D:\Computer Sceince\DS project\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.LogInForm.resources
+D:\Computer Sceince\DS project\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.StatisticsForm.resources
+D:\Computer Sceince\DS project\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.UserAddingForm.resources
+D:\Computer Sceince\DS project\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.UserForm.resources
+D:\Computer Sceince\DS project\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.UserUpdateForm.resources
+D:\Computer Sceince\DS project\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.WaitingForVaccinationForm.resources
+D:\Computer Sceince\DS project\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.ListItem.resources
+D:\Computer Sceince\DS project\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Properties.Resources.resources
+D:\Computer Sceince\DS project\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.csproj.GenerateResource.cache
+D:\Computer Sceince\DS project\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.exe
+D:\Computer Sceince\DS project\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.pdb

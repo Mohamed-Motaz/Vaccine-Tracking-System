@@ -21,6 +21,7 @@ namespace VaccineTrackingSystem.Forms
         {
 
             userBindingSource.DataSource = DataContainer.Users;
+            
         }
 
         private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -33,7 +33,7 @@
             this.Passwordlabel = new System.Windows.Forms.Label();
             this.genderlabel = new System.Windows.Forms.Label();
             this.Agelabel = new System.Windows.Forms.Label();
-            this.contrylabel = new System.Windows.Forms.Label();
+            this.countrylabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -57,7 +57,7 @@
             // IDlabel
             // 
             this.IDlabel.AutoSize = true;
-            this.IDlabel.Location = new System.Drawing.Point(460, 39);
+            this.IDlabel.Location = new System.Drawing.Point(452, 39);
             this.IDlabel.Name = "IDlabel";
             this.IDlabel.Size = new System.Drawing.Size(74, 17);
             this.IDlabel.TabIndex = 1;
@@ -92,15 +92,15 @@
             this.Agelabel.TabIndex = 4;
             this.Agelabel.Text = "Age";
             // 
-            // contrylabel
+            // countrylabel
             // 
-            this.contrylabel.AutoSize = true;
-            this.contrylabel.Location = new System.Drawing.Point(440, 10);
-            this.contrylabel.Name = "contrylabel";
-            this.contrylabel.Size = new System.Drawing.Size(59, 17);
-            this.contrylabel.TabIndex = 5;
-            this.contrylabel.Text = "Country";
-            this.contrylabel.Click += new System.EventHandler(this.contrylabel_Click);
+            this.countrylabel.AutoSize = true;
+            this.countrylabel.Location = new System.Drawing.Point(440, 10);
+            this.countrylabel.Name = "countrylabel";
+            this.countrylabel.Size = new System.Drawing.Size(59, 17);
+            this.countrylabel.TabIndex = 5;
+            this.countrylabel.Text = "Country";
+            this.countrylabel.Click += new System.EventHandler(this.contrylabel_Click);
             // 
             // pictureBox1
             // 
@@ -117,7 +117,7 @@
             this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
             this.panel1.Location = new System.Drawing.Point(3, 130);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(591, 10);
+            this.panel1.Size = new System.Drawing.Size(751, 10);
             this.panel1.TabIndex = 7;
             // 
             // label1
@@ -187,14 +187,14 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.contrylabel);
+            this.Controls.Add(this.countrylabel);
             this.Controls.Add(this.Agelabel);
             this.Controls.Add(this.genderlabel);
             this.Controls.Add(this.Passwordlabel);
             this.Controls.Add(this.IDlabel);
             this.Controls.Add(this.namelabel);
             this.Name = "ListItem";
-            this.Size = new System.Drawing.Size(591, 140);
+            this.Size = new System.Drawing.Size(624, 140);
             this.Load += new System.EventHandler(this.ListItem_Load);
             this.MouseEnter += new System.EventHandler(this.ListItem_MouseEnter);
             this.MouseLeave += new System.EventHandler(this.ListItem_MouseLeave);
@@ -212,7 +212,7 @@
         private System.Windows.Forms.Label Passwordlabel;
         private System.Windows.Forms.Label genderlabel;
         private System.Windows.Forms.Label Agelabel;
-        private System.Windows.Forms.Label contrylabel;
+        private System.Windows.Forms.Label countrylabel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;

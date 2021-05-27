@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VaccineTrackingSystem.DataStructures;
 
 namespace VaccineTrackingSystem
 {
@@ -16,6 +17,7 @@ namespace VaccineTrackingSystem
         {
             InitializeComponent();
         }
+
         #region  properties
         private String _Name;
         [Category("Custom Props")]
@@ -54,11 +56,11 @@ namespace VaccineTrackingSystem
             set { _Age = value; Agelabel.Text = value.ToString() ; }
         }
         [Category("Custom Props")]
-        private String _Contry;
-        public String contry
+        private String _Country;
+        public String country
         {
-            get { return _Contry; }
-            set { _Contry = value; contrylabel.Text = value; }
+            get { return _Country; }
+            set { _Country = value; countrylabel.Text = value; }
         }
 
 
@@ -68,7 +70,6 @@ namespace VaccineTrackingSystem
 
         }
 
-       
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -104,5 +105,6 @@ namespace VaccineTrackingSystem
         {
 
         }
+        
     }
 }

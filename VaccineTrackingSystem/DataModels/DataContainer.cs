@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using VaccineTrackingSystem.DataStructures;
 
 namespace VaccineTrackingSystem.DataModels
 {
     class DataContainer
     {
         public static string AdminPassword = "admin";
-        public static List<User> CurrentlyWaiting = new List<User>();
+        public static CustomList<User> CurrentlyWaiting = new CustomList<User>();
         public static User CurrentUser;
         public static HashSet<String> EgyptianGovernorates = new HashSet<string>()
         {
@@ -19,7 +19,7 @@ namespace VaccineTrackingSystem.DataModels
             "Monufia", "New Valley", "North Sinai", "Port Said", "Qalyubia", "Qena", "Red Sea",
             "Sharqia", "Sohag", "South Sinai", "Suez"
         };
-        public static List<User> Users = new List<User>() { 
+        public static CustomList<User> Users = new CustomList<User>() { 
         new User()
         {
             UserName = "Mohamed Motaz",
