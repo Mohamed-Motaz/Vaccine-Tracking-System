@@ -19,8 +19,8 @@ namespace VaccineTrackingSystem.Forms
         }
         private void AdminControlForm_Load(object sender, EventArgs e)
         {
-
-            userBindingSource.DataSource = DataContainer.Users;
+          
+            userBindingSource.DataSource = DataContainer.Users.ToList();
             
         }
 
@@ -30,10 +30,11 @@ namespace VaccineTrackingSystem.Forms
             {
                 if (MessageBox.Show("Are you sure you want to delete this customer ?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    MessageBox.Show(((User)userBindingSource.Current).Country);
+                    Console.WriteLine("in delete " + DataContainer.Users.CurrentPos);
                     User tmpUser = (User)userBindingSource.Current;
+                    User.HandleUserDelete(tmpUser);                    
                     userBindingSource.RemoveCurrent();
-                    User.HandleUserDelete(tmpUser);
+
                 }
             }
         }
@@ -43,20 +44,16 @@ namespace VaccineTrackingSystem.Forms
 
             if (searchTextBox.Text.Length == 0)
             {
-                userBindingSource.DataSource = DataContainer.Users;
+                userBindingSource.DataSource = DataContainer.Users.ToList();
 
             }
             else
             {
                 List<User> newUsers = new List<User>();
-                foreach(User usr in DataContainer.Users)
-                {
-                    if (usr.NationalID.Contains(searchTextBox.Text))
-                    {
 
+                foreach(User usr in DataContainer.Users)
+                    if (usr.NationalID.Contains(searchTextBox.Text))
                         newUsers.Add(usr);
-                    }
-                }
 
                 userBindingSource.DataSource = newUsers;
             }
@@ -70,7 +67,14 @@ namespace VaccineTrackingSystem.Forms
         private void DeleteAllRecords_Click(object sender, EventArgs e)
         {            
             userBindingSource.DataSource = new List<User>();
-            DataContainer.Users.Clear();
+            Console.WriteLine(DataContainer.Users.CurrentPos);
+            for(int i = 0; i <= DataContainer.Users.CurrentPos; i++)
+            {
+                User user = DataContainer.Users[i];
+                User.HandleUserDelete(user);
+                i--; //becuase of the implementation of remove in custom list
+            }
+            MessageBox.Show("All users succesfully deleted");
         }
 
         private void BackBtn_Click(object sender, EventArgs e)

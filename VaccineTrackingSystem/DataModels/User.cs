@@ -25,11 +25,18 @@ namespace VaccineTrackingSystem.DataModels
         }
         public static void HandleUserDelete(User user)
         {
+            Console.WriteLine("in handle delete " + DataContainer.Users.CurrentPos);
+            Console.WriteLine(DataContainer.UsersMap.Count);
+            Console.WriteLine(DataContainer.CurrentlyWaiting.CurrentPos);
+
             User tmpUser = DataContainer.UsersMap[user.NationalID];
+            Console.WriteLine(tmpUser.NationalID + " " + tmpUser.UserName);
             DataContainer.CurrentlyWaiting.Remove(tmpUser);
             DataContainer.Users.Remove(tmpUser);
             DataContainer.UsersMap.Remove(tmpUser.NationalID);
             DataContainer.CurrentUser = null;
+            Console.WriteLine(DataContainer.UsersMap.Count);
+            Console.WriteLine(DataContainer.CurrentlyWaiting.CurrentPos);
         }
         public static void HandleUserAddition(User user)
         {

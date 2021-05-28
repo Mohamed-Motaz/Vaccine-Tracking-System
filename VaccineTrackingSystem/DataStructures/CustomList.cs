@@ -4,27 +4,44 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VaccineTrackingSystem.DataModels;
 
 namespace VaccineTrackingSystem.DataStructures
 {
-	class CustomList<T> : IEnumerable<T>
+	class CustomList<T> : IEnumerable<T>, IEnumerator
 	{
 		T []arr;
 		int size;
-		public int CurrentPos;
-		public T this[int index]
+		public int CurrentPos = -1;
+		public int position = -1;
+        private bool disposedValue;
+
+        public T this[int index]
 		{
 			get { return (T)arr[index]; }
 		}
 		public CustomList()
 		{
 			arr = new T[105];
-			size = 106;
-			CurrentPos = 0;
+			size = 105;
 		}
 
-	  
- 		public void Expand()
+		public bool MoveNext()
+		{
+			position++;
+			return (position <= CurrentPos);
+		}
+		public void Reset()
+		{
+			position = 0;
+		}
+		public object Current
+		{
+			get { return arr[position]; }
+		}
+
+
+        public void Expand()
 		{
 			int NewSize = size + 60;
 			T[] NewArr = new T[NewSize];
@@ -46,26 +63,26 @@ namespace VaccineTrackingSystem.DataStructures
 
 		public void Delete(int pos)
 		{
-			for (int i = pos; i < CurrentPos - 1; i++)
+			if (pos > CurrentPos || pos < 0) return;
+			for (int i = pos; i < CurrentPos; i++)
 				arr[i] = arr[i + 1];
+			arr[CurrentPos] = default(T);
 			CurrentPos--;
 		}
 		public void Clear()
 		{
-			for (int i = 0; i < CurrentPos; i++)
+			for (int i = 0; i <= CurrentPos; i++)
 				arr[i] = default(T);
+			CurrentPos = -1;
 		}
-		public void Remove(T obj )
+		public void Remove(T obj)
 		{
-			int idx = 0;
-			for (int i = 0; i < CurrentPos - 1; i++)
-			{
-				if (arr[i].Equals(obj))
+			int idx = -1;
+			for (int i = 0; i <= CurrentPos; i++)
+				if (Object.ReferenceEquals(arr[i],obj))
 					idx = i;
-			}
-
-			for (int i = idx; i < CurrentPos; i++)
-				arr[i] = arr[i + 1]; 
+			if (idx == -1) return;
+			Delete(idx);
 
 		}
 		public IEnumerator<T> GetEnumerator()
@@ -73,9 +90,7 @@ namespace VaccineTrackingSystem.DataStructures
 			foreach (T o in arr)
 			{
 				if (o == null)
-				{
 					break;
-				}
 				yield return o;
 			}
 		}
@@ -85,6 +100,6 @@ namespace VaccineTrackingSystem.DataStructures
 			return this.GetEnumerator();
 		}
 
-
-	}
+        
+    }
 }

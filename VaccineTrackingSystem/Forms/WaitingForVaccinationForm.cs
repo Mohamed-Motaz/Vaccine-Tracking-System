@@ -54,7 +54,7 @@ namespace VaccineTrackingSystem.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AdminControlForm form = new AdminControlForm();
+            AdminForm form = new AdminForm();
             form.ShowDialog();
             this.Close();
         }
