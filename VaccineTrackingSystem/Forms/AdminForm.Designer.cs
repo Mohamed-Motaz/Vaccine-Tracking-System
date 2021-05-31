@@ -33,6 +33,7 @@
             this.WaitingList = new System.Windows.Forms.Button();
             this.UserControl = new System.Windows.Forms.Button();
             this.BackBtn = new System.Windows.Forms.Button();
+            this.DataVisualizationBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Statistics
@@ -44,7 +45,7 @@
             this.Statistics.ForeColor = System.Drawing.Color.White;
             this.Statistics.Image = ((System.Drawing.Image)(resources.GetObject("Statistics.Image")));
             this.Statistics.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Statistics.Location = new System.Drawing.Point(-1, 61);
+            this.Statistics.Location = new System.Drawing.Point(402, 7);
             this.Statistics.Name = "Statistics";
             this.Statistics.Size = new System.Drawing.Size(184, 47);
             this.Statistics.TabIndex = 18;
@@ -62,7 +63,7 @@
             this.WaitingList.ForeColor = System.Drawing.Color.White;
             this.WaitingList.Image = ((System.Drawing.Image)(resources.GetObject("WaitingList.Image")));
             this.WaitingList.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.WaitingList.Location = new System.Drawing.Point(-1, 114);
+            this.WaitingList.Location = new System.Drawing.Point(-1, 61);
             this.WaitingList.Name = "WaitingList";
             this.WaitingList.Size = new System.Drawing.Size(221, 46);
             this.WaitingList.TabIndex = 19;
@@ -107,6 +108,24 @@
             this.BackBtn.UseVisualStyleBackColor = false;
             this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
+            // DataVisualizationBtn
+            // 
+            this.DataVisualizationBtn.BackColor = System.Drawing.Color.Transparent;
+            this.DataVisualizationBtn.FlatAppearance.BorderSize = 0;
+            this.DataVisualizationBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DataVisualizationBtn.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DataVisualizationBtn.ForeColor = System.Drawing.Color.White;
+            this.DataVisualizationBtn.Image = ((System.Drawing.Image)(resources.GetObject("DataVisualizationBtn.Image")));
+            this.DataVisualizationBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.DataVisualizationBtn.Location = new System.Drawing.Point(345, 60);
+            this.DataVisualizationBtn.Name = "DataVisualizationBtn";
+            this.DataVisualizationBtn.Size = new System.Drawing.Size(299, 51);
+            this.DataVisualizationBtn.TabIndex = 41;
+            this.DataVisualizationBtn.Text = "Data Visualization";
+            this.DataVisualizationBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DataVisualizationBtn.UseVisualStyleBackColor = false;
+            this.DataVisualizationBtn.Click += new System.EventHandler(this.DataVisualizationBtn_Click);
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -114,6 +133,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(773, 492);
+            this.Controls.Add(this.DataVisualizationBtn);
             this.Controls.Add(this.BackBtn);
             this.Controls.Add(this.UserControl);
             this.Controls.Add(this.WaitingList);
@@ -132,5 +152,6 @@
         private System.Windows.Forms.Button WaitingList;
         private System.Windows.Forms.Button UserControl;
         private System.Windows.Forms.Button BackBtn;
+        private System.Windows.Forms.Button DataVisualizationBtn;
     }
 }

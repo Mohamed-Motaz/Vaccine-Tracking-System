@@ -75,7 +75,7 @@ namespace VaccineTrackingSystem
                 Gender = "Female",
                 Age = 15,
                 Governorate = "Giza",
-                Vaccinated = 0
+                Vaccinated = 2
             });
             DataContainer.Users.Add(new User()
             {

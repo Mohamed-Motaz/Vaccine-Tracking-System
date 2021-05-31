@@ -57,11 +57,17 @@ namespace VaccineTrackingSystem
             else if (Male.Checked)
                 user.Gender = "Male";
             if (Zero.Checked)
+            {
                 user.Vaccinated = 0;
+            }
             else if (One.Checked)
+            {
                 user.Vaccinated = 1;
+            }
             else if (Two.Checked)
+            {
                 user.Vaccinated = 2;
+            }
             return user;
         }
         public bool Validate()

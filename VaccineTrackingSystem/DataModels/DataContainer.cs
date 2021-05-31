@@ -22,6 +22,5 @@ namespace VaccineTrackingSystem.DataModels
         public static CustomList<User> Users = new CustomList<User>() {};
         public static Dictionary<string, User> UsersMap;
 
-
     }
 }

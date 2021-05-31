@@ -28,7 +28,6 @@ namespace VaccineTrackingSystem.Forms
         {
             if (!Validate())
                 return;
-
             FillUserData(ref DataContainer.CurrentUser);
             User.HandleUserUpdate(DataContainer.CurrentUser);
             MessageBox.Show("User Successfully Updated");

@@ -54,5 +54,13 @@ namespace VaccineTrackingSystem.Forms
             form.ShowDialog();
             this.Close();
         }
+
+        private void DataVisualizationBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DataVisualizationForm form = new DataVisualizationForm();
+            form.ShowDialog();
+            this.Close();
+        }
     }
 }
