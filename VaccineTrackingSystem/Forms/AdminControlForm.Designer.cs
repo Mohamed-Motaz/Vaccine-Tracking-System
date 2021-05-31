@@ -32,9 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminControlForm));
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.DeleteAllRecords = new System.Windows.Forms.Button();
-            this.BackBtn = new System.Windows.Forms.Button();
             this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nationalIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,14 +40,18 @@
             this.countryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.governorateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vaccinatedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.DeleteAllRecords = new System.Windows.Forms.Button();
+            this.BackBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // searchTextBox
             // 
-            this.searchTextBox.Location = new System.Drawing.Point(411, 29);
+            this.searchTextBox.Location = new System.Drawing.Point(300, 15);
             this.searchTextBox.Multiline = true;
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.Size = new System.Drawing.Size(203, 37);
@@ -74,54 +75,11 @@
             this.vaccinatedDataGridViewTextBoxColumn,
             this.Delete});
             this.dataGridView.DataSource = this.userBindingSource;
-            this.dataGridView.Location = new System.Drawing.Point(12, 72);
+            this.dataGridView.Location = new System.Drawing.Point(13, 62);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.Size = new System.Drawing.Size(943, 450);
             this.dataGridView.TabIndex = 1;
             this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
-            // 
-            // Delete
-            // 
-            this.Delete.HeaderText = "Delete";
-            this.Delete.Name = "Delete";
-            this.Delete.Text = "Delete";
-            this.Delete.UseColumnTextForButtonValue = true;
-            // 
-            // DeleteAllRecords
-            // 
-            this.DeleteAllRecords.BackColor = System.Drawing.Color.Transparent;
-            this.DeleteAllRecords.FlatAppearance.BorderSize = 0;
-            this.DeleteAllRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DeleteAllRecords.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteAllRecords.ForeColor = System.Drawing.Color.White;
-            this.DeleteAllRecords.Image = ((System.Drawing.Image)(resources.GetObject("DeleteAllRecords.Image")));
-            this.DeleteAllRecords.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.DeleteAllRecords.Location = new System.Drawing.Point(653, -2);
-            this.DeleteAllRecords.Name = "DeleteAllRecords";
-            this.DeleteAllRecords.Size = new System.Drawing.Size(256, 68);
-            this.DeleteAllRecords.TabIndex = 21;
-            this.DeleteAllRecords.Text = "Delete All Records";
-            this.DeleteAllRecords.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DeleteAllRecords.UseVisualStyleBackColor = false;
-            this.DeleteAllRecords.Click += new System.EventHandler(this.DeleteAllRecords_Click);
-            // 
-            // BackBtn
-            // 
-            this.BackBtn.BackColor = System.Drawing.Color.Transparent;
-            this.BackBtn.FlatAppearance.BorderSize = 0;
-            this.BackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BackBtn.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackBtn.ForeColor = System.Drawing.Color.White;
-            this.BackBtn.Image = ((System.Drawing.Image)(resources.GetObject("BackBtn.Image")));
-            this.BackBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BackBtn.Location = new System.Drawing.Point(38, 12);
-            this.BackBtn.Name = "BackBtn";
-            this.BackBtn.Size = new System.Drawing.Size(109, 36);
-            this.BackBtn.TabIndex = 40;
-            this.BackBtn.Text = "Back";
-            this.BackBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BackBtn.UseVisualStyleBackColor = false;
-            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
             // userNameDataGridViewTextBoxColumn
             // 
@@ -171,16 +129,73 @@
             this.vaccinatedDataGridViewTextBoxColumn.HeaderText = "Vaccinated";
             this.vaccinatedDataGridViewTextBoxColumn.Name = "vaccinatedDataGridViewTextBoxColumn";
             // 
+            // Delete
+            // 
+            this.Delete.HeaderText = "Delete";
+            this.Delete.Name = "Delete";
+            this.Delete.Text = "Delete";
+            this.Delete.UseColumnTextForButtonValue = true;
+            // 
             // userBindingSource
             // 
             this.userBindingSource.DataSource = typeof(VaccineTrackingSystem.DataModels.User);
+            // 
+            // DeleteAllRecords
+            // 
+            this.DeleteAllRecords.BackColor = System.Drawing.Color.Transparent;
+            this.DeleteAllRecords.FlatAppearance.BorderSize = 0;
+            this.DeleteAllRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeleteAllRecords.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteAllRecords.ForeColor = System.Drawing.Color.White;
+            this.DeleteAllRecords.Image = ((System.Drawing.Image)(resources.GetObject("DeleteAllRecords.Image")));
+            this.DeleteAllRecords.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DeleteAllRecords.Location = new System.Drawing.Point(694, 518);
+            this.DeleteAllRecords.Name = "DeleteAllRecords";
+            this.DeleteAllRecords.Size = new System.Drawing.Size(262, 45);
+            this.DeleteAllRecords.TabIndex = 21;
+            this.DeleteAllRecords.Text = "Delete All Records";
+            this.DeleteAllRecords.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.DeleteAllRecords.UseVisualStyleBackColor = false;
+            this.DeleteAllRecords.Click += new System.EventHandler(this.DeleteAllRecords_Click);
+            // 
+            // BackBtn
+            // 
+            this.BackBtn.BackColor = System.Drawing.Color.Transparent;
+            this.BackBtn.FlatAppearance.BorderSize = 0;
+            this.BackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackBtn.ForeColor = System.Drawing.Color.White;
+            this.BackBtn.Image = ((System.Drawing.Image)(resources.GetObject("BackBtn.Image")));
+            this.BackBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BackBtn.Location = new System.Drawing.Point(847, 11);
+            this.BackBtn.Name = "BackBtn";
+            this.BackBtn.Size = new System.Drawing.Size(109, 36);
+            this.BackBtn.TabIndex = 40;
+            this.BackBtn.Text = "Back";
+            this.BackBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BackBtn.UseVisualStyleBackColor = false;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(7, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(277, 32);
+            this.label1.TabIndex = 41;
+            this.label1.Text = "Search By National ID :";
             // 
             // AdminControlForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(968, 584);
+            this.ClientSize = new System.Drawing.Size(968, 576);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.BackBtn);
             this.Controls.Add(this.DeleteAllRecords);
             this.Controls.Add(this.dataGridView);
@@ -211,5 +226,6 @@
         private System.Windows.Forms.BindingSource userBindingSource;
         private System.Windows.Forms.Button DeleteAllRecords;
         private System.Windows.Forms.Button BackBtn;
+        private System.Windows.Forms.Label label1;
     }
 }

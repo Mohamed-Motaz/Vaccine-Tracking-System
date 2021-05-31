@@ -65,45 +65,16 @@ namespace VaccineTrackingSystem
 
 
         #endregion;
-        private void ListItem_Load(object sender, EventArgs e)
-        {
 
-        }
-
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ListItem_MouseEnter(object sender, EventArgs e)
-        {
-
-        }
 
         private void ListItem_MouseHover(object sender, EventArgs e)
         {
-            this.BackColor = Color.Bisque;
+            this.BackColor = Color.Black;
         }
 
         private void ListItem_MouseLeave(object sender, EventArgs e)
         {
-            this.BackColor = Color.White;
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void contrylabel_Click(object sender, EventArgs e)
-        {
-
+            this.BackColor = Color.Transparent;
         }
         
     }

@@ -129,7 +129,5 @@ namespace VaccineTrackingSystem.Forms
             form.ShowDialog();
             this.Close();
         }
-
-   
     }
 }

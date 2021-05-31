@@ -57,14 +57,13 @@
             this.CalculateForVaccineSystem.BackColor = System.Drawing.Color.Transparent;
             this.CalculateForVaccineSystem.FlatAppearance.BorderSize = 0;
             this.CalculateForVaccineSystem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CalculateForVaccineSystem.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CalculateForVaccineSystem.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CalculateForVaccineSystem.ForeColor = System.Drawing.Color.Snow;
             this.CalculateForVaccineSystem.Image = ((System.Drawing.Image)(resources.GetObject("CalculateForVaccineSystem.Image")));
             this.CalculateForVaccineSystem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CalculateForVaccineSystem.Location = new System.Drawing.Point(8, 235);
-            this.CalculateForVaccineSystem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CalculateForVaccineSystem.Location = new System.Drawing.Point(2, 218);
             this.CalculateForVaccineSystem.Name = "CalculateForVaccineSystem";
-            this.CalculateForVaccineSystem.Size = new System.Drawing.Size(141, 62);
+            this.CalculateForVaccineSystem.Size = new System.Drawing.Size(132, 36);
             this.CalculateForVaccineSystem.TabIndex = 20;
             this.CalculateForVaccineSystem.Text = "Calculate";
             this.CalculateForVaccineSystem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -75,24 +74,24 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.IndianRed;
-            this.label1.Location = new System.Drawing.Point(10, 37);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(8, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1043, 33);
+            this.label1.Size = new System.Drawing.Size(822, 25);
             this.label1.TabIndex = 21;
-            this.label1.Text = " Percentages with respect to the total number of people applied for vaccine track" +
-    "ing system:";
+            this.label1.Text = "Percentages with respect to the total number of people applied for vaccine tracki" +
+    "ng system:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.IndianRed;
-            this.label2.Location = new System.Drawing.Point(10, 300);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(9, 279);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(659, 33);
+            this.label2.Size = new System.Drawing.Size(523, 25);
             this.label2.TabIndex = 22;
             this.label2.Text = "Percentages with respect to the total population of Egypt:";
             // 
@@ -100,11 +99,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.label3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label3.Location = new System.Drawing.Point(14, 347);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(10, 316);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(464, 28);
+            this.label3.Size = new System.Drawing.Size(384, 21);
             this.label3.TabIndex = 23;
             this.label3.Text = "Percentage of those who applied for vaccination:";
             // 
@@ -112,31 +111,30 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label4.Location = new System.Drawing.Point(12, 85);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(9, 83);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(464, 28);
+            this.label4.Size = new System.Drawing.Size(384, 21);
             this.label4.TabIndex = 24;
             this.label4.Text = "Percentage of those who applied for vaccination:";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(484, 351);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox2.Location = new System.Drawing.Point(398, 316);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(175, 24);
+            this.textBox2.Size = new System.Drawing.Size(151, 20);
             this.textBox2.TabIndex = 26;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label5.Location = new System.Drawing.Point(14, 391);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(9, 355);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(307, 28);
+            this.label5.Size = new System.Drawing.Size(256, 21);
             this.label5.TabIndex = 27;
             this.label5.Text = "Percentage of the unvaccinated:";
             // 
@@ -144,11 +142,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.label7.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label7.Location = new System.Drawing.Point(13, 478);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(9, 430);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(433, 28);
+            this.label7.Size = new System.Drawing.Size(359, 21);
             this.label7.TabIndex = 29;
             this.label7.Text = "Percentage of those who got fully vaccinated:";
             // 
@@ -156,11 +154,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label8.Location = new System.Drawing.Point(14, 121);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(10, 118);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(307, 28);
+            this.label8.Size = new System.Drawing.Size(256, 21);
             this.label8.TabIndex = 30;
             this.label8.Text = "Percentage of the unvaccinated:";
             // 
@@ -168,11 +166,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.label9.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label9.Location = new System.Drawing.Point(12, 161);
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(10, 154);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(497, 28);
+            this.label9.Size = new System.Drawing.Size(404, 21);
             this.label9.TabIndex = 31;
             this.label9.Text = "Percentage of those who received at least one dose:";
             // 
@@ -180,80 +178,73 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.label10.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label10.Location = new System.Drawing.Point(12, 203);
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(9, 194);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(433, 28);
+            this.label10.Size = new System.Drawing.Size(359, 21);
             this.label10.TabIndex = 32;
             this.label10.Text = "Percentage of those who got fully vaccinated:";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(329, 125);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox3.Location = new System.Drawing.Point(277, 119);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(136, 24);
+            this.textBox3.Size = new System.Drawing.Size(117, 20);
             this.textBox3.TabIndex = 33;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(513, 165);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox4.Location = new System.Drawing.Point(415, 157);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(132, 24);
+            this.textBox4.Size = new System.Drawing.Size(114, 20);
             this.textBox4.TabIndex = 34;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(451, 207);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox5.Location = new System.Drawing.Point(370, 195);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(153, 24);
+            this.textBox5.Size = new System.Drawing.Size(132, 20);
             this.textBox5.TabIndex = 35;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(327, 395);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox6.Location = new System.Drawing.Point(266, 355);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(149, 24);
+            this.textBox6.Size = new System.Drawing.Size(128, 20);
             this.textBox6.TabIndex = 36;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(452, 482);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox8.Location = new System.Drawing.Point(364, 430);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(160, 24);
+            this.textBox8.Size = new System.Drawing.Size(138, 20);
             this.textBox8.TabIndex = 38;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.label6.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label6.Location = new System.Drawing.Point(12, 433);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(9, 392);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(497, 28);
+            this.label6.Size = new System.Drawing.Size(404, 21);
             this.label6.TabIndex = 40;
             this.label6.Text = "Percentage of those who received at least one dose:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(477, 89);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox1.Location = new System.Drawing.Point(399, 84);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(135, 24);
+            this.textBox1.Size = new System.Drawing.Size(116, 20);
             this.textBox1.TabIndex = 41;
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(513, 437);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox9.Location = new System.Drawing.Point(415, 392);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(156, 24);
+            this.textBox9.Size = new System.Drawing.Size(134, 20);
             this.textBox9.TabIndex = 42;
             // 
             // CalculateForEgypt
@@ -261,14 +252,13 @@
             this.CalculateForEgypt.BackColor = System.Drawing.Color.Transparent;
             this.CalculateForEgypt.FlatAppearance.BorderSize = 0;
             this.CalculateForEgypt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CalculateForEgypt.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CalculateForEgypt.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CalculateForEgypt.ForeColor = System.Drawing.Color.Snow;
             this.CalculateForEgypt.Image = ((System.Drawing.Image)(resources.GetObject("CalculateForEgypt.Image")));
             this.CalculateForEgypt.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CalculateForEgypt.Location = new System.Drawing.Point(16, 510);
-            this.CalculateForEgypt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CalculateForEgypt.Location = new System.Drawing.Point(2, 463);
             this.CalculateForEgypt.Name = "CalculateForEgypt";
-            this.CalculateForEgypt.Size = new System.Drawing.Size(141, 62);
+            this.CalculateForEgypt.Size = new System.Drawing.Size(132, 36);
             this.CalculateForEgypt.TabIndex = 43;
             this.CalculateForEgypt.Text = "Calculate";
             this.CalculateForEgypt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -283,24 +273,23 @@
             this.BackBtn.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackBtn.ForeColor = System.Drawing.Color.White;
             this.BackBtn.Image = ((System.Drawing.Image)(resources.GetObject("BackBtn.Image")));
-            this.BackBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BackBtn.Location = new System.Drawing.Point(841, 1);
-            this.BackBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BackBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BackBtn.Location = new System.Drawing.Point(741, 3);
             this.BackBtn.Name = "BackBtn";
-            this.BackBtn.Size = new System.Drawing.Size(127, 44);
+            this.BackBtn.Size = new System.Drawing.Size(109, 36);
             this.BackBtn.TabIndex = 44;
             this.BackBtn.Text = "Back";
-            this.BackBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BackBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BackBtn.UseVisualStyleBackColor = false;
             this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
             // StatisticsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(992, 618);
+            this.ClientSize = new System.Drawing.Size(851, 508);
             this.Controls.Add(this.BackBtn);
             this.Controls.Add(this.CalculateForEgypt);
             this.Controls.Add(this.textBox9);
@@ -323,7 +312,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CalculateForVaccineSystem);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "StatisticsForm";
             this.Text = "Statistics";
             this.ResumeLayout(false);
