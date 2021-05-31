@@ -15,7 +15,7 @@ namespace VaccineTrackingSystem.Forms
         public DataVisualizationForm()
         {
             InitializeComponent();
-            int CntZeroDoses = 0, CntOneDose = 0, CntTwoDoses = 0, CntMales=0, CntFemales=0;
+            int CntZeroDoses = 0, CntOneDose = 0, CntTwoDoses = 0, CntMales=0, CntFemales=0, Cnt=0;
             foreach (User user in DataContainer.Users)
             {
                 if (user.Vaccinated == 0)
@@ -30,13 +30,14 @@ namespace VaccineTrackingSystem.Forms
                         CntMales++;
                     else
                         CntFemales++;
+                    Cnt++;
                 }
             }
             double Zero = CntZeroDoses * 1.0 / DataContainer.Users.Count();
             double One = CntOneDose * 1.0 / DataContainer.Users.Count();
             double Two = CntTwoDoses * 1.0 / DataContainer.Users.Count();
-            double Males = CntMales*1.0/ DataContainer.Users.Count();
-            double Females = CntFemales * 1.0 / DataContainer.Users.Count();
+            double Males = CntMales * 1.0 / Cnt;
+            double Females = CntFemales * 1.0 / Cnt;
             VaccinatedChart.Series["s1"].IsValueShownAsLabel = true;
             VaccinatedChart.Series["s1"].Points.AddXY("Zero doses", Zero);
             VaccinatedChart.Series["s1"].Points.AddXY("One dose", One);
