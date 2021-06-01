@@ -124,7 +124,7 @@ namespace VaccineTrackingSystem.Forms
         {
             DataContainer.CurrentUser = null;
             this.Hide();
-            LogInForm form = new LogInForm();
+            UserForm form = new UserForm();
             form.ShowDialog();
             this.Close();
         }

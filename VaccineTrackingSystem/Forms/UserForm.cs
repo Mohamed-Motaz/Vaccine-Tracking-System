@@ -28,14 +28,16 @@ namespace VaccineTrackingSystem.Forms
 
         private void UserDelete_Click(object sender, EventArgs e)
         {
-            User.HandleUserDelete(DataContainer.CurrentUser);
-            MessageBox.Show("User successfully deleted");
-            this.Hide();
-            LogInForm form = new LogInForm();
-            form.ShowDialog();
-            this.Close();
-            DataContainer.CurrentUser = null; //make sure current user is no longer logged in
-
+            if (MessageBox.Show("Are you sure you want to delete this user ?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                User.HandleUserDelete(DataContainer.CurrentUser);
+                MessageBox.Show("User successfully deleted");
+                this.Hide();
+                LogInForm form = new LogInForm();
+                form.ShowDialog();
+                this.Close();
+                DataContainer.CurrentUser = null; //make sure current user is no longer logged in
+            }
         }
 
         private void BackBtn_Click(object sender, EventArgs e)

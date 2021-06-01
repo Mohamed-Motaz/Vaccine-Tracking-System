@@ -28,13 +28,13 @@ namespace VaccineTrackingSystem.Forms
         {
             if (dataGridView.Columns[e.ColumnIndex].Name == "Delete")
             {
-                if (MessageBox.Show("Are you sure you want to delete this customer ?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Are you sure you want to delete this user ?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     Console.WriteLine("in delete " + DataContainer.Users.CurrentPos);
                     User tmpUser = (User)userBindingSource.Current;
                     User.HandleUserDelete(tmpUser);                    
                     userBindingSource.RemoveCurrent();
-
+                    MessageBox.Show("User succesfully deleted");
                 }
             }
         }
@@ -65,16 +65,19 @@ namespace VaccineTrackingSystem.Forms
         }
 
         private void DeleteAllRecords_Click(object sender, EventArgs e)
-        {            
-            userBindingSource.DataSource = new List<User>();
-            Console.WriteLine(DataContainer.Users.CurrentPos);
-            for(int i = 0; i <= DataContainer.Users.CurrentPos; i++)
+        {
+            if (MessageBox.Show("Are you sure you want to delete all users ?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                User user = DataContainer.Users[i];
-                User.HandleUserDelete(user);
-                i--; //becuase of the implementation of remove in custom list
+                userBindingSource.DataSource = new List<User>();
+                Console.WriteLine(DataContainer.Users.CurrentPos);
+                for (int i = 0; i <= DataContainer.Users.CurrentPos; i++)
+                {
+                    User user = DataContainer.Users[i];
+                    User.HandleUserDelete(user);
+                    i--; //becuase of the implementation of remove in custom list
+                }
+                MessageBox.Show("All users succesfully deleted");
             }
-            MessageBox.Show("All users succesfully deleted");
         }
 
         private void BackBtn_Click(object sender, EventArgs e)

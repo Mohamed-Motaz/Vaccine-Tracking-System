@@ -33,20 +33,27 @@ namespace VaccineTrackingSystem.Forms
                 else
                     dose2++;
             }
-            dose0 = (dose0 / DataContainer.Users.Count()) * 100;
-            dose1 = (dose1 / DataContainer.Users.Count()) * 100;
-            dose2 = (dose2 / DataContainer.Users.Count()) * 100;
-            dose0 = Math.Round(dose0, 2);
-            dose1 = Math.Round(dose1, 2);
-            dose2 = Math.Round(dose2, 2);
+            if (DataContainer.Users.Count() == 0)
+            {
+                textBox1.Text = "0%";
+                textBox3.Text = "0%";
+                textBox4.Text = "0%";
+                textBox5.Text = "0%";
+            }
 
-
-
-            textBox1.Text = (((double)DataContainer.CurrentlyWaiting.Count() / DataContainer.Users.Count()) * 100).ToString() + '%';
-            textBox3.Text = dose0.ToString() + '%';
-            textBox4.Text = dose1.ToString() + '%';
-            textBox5.Text = dose2.ToString() + '%';
-
+            else
+            {
+                dose0 = (dose0 / DataContainer.Users.Count()) * 100;
+                dose1 = (dose1 / DataContainer.Users.Count()) * 100;
+                dose2 = (dose2 / DataContainer.Users.Count()) * 100;
+                dose0 = Math.Round(dose0, 2);
+                dose1 = Math.Round(dose1, 2);
+                dose2 = Math.Round(dose2, 2);
+                textBox1.Text = (((double)DataContainer.CurrentlyWaiting.Count() / DataContainer.Users.Count()) * 100).ToString() + '%';
+                textBox3.Text = dose0.ToString() + '%';
+                textBox4.Text = dose1.ToString() + '%';
+                textBox5.Text = dose2.ToString() + '%';
+            }
         }
 
         private void CalculateForEgypt_Click(object sender, EventArgs e)
