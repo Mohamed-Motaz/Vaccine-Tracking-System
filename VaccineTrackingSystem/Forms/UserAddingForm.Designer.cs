@@ -75,6 +75,7 @@
             this.UserCountry.Name = "UserCountry";
             this.UserCountry.Size = new System.Drawing.Size(211, 20);
             this.UserCountry.TabIndex = 4;
+            this.UserCountry.TextChanged += new System.EventHandler(this.UserCountry_TextChanged);
             // 
             // UserAge
             // 
@@ -90,6 +91,7 @@
             this.UserGovernorate.Name = "UserGovernorate";
             this.UserGovernorate.Size = new System.Drawing.Size(156, 21);
             this.UserGovernorate.TabIndex = 13;
+            this.UserGovernorate.SelectedIndexChanged += new System.EventHandler(this.UserGovernorate_SelectedIndexChanged);
             // 
             // UserAdding
             // 

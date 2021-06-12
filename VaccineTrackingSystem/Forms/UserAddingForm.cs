@@ -22,6 +22,7 @@ namespace VaccineTrackingSystem
         private void UserForm_Load(object sender, EventArgs e)
         {
             FillEgyptianGovernorates();
+            UserGovernorate.Enabled = false;  //enable only when country set to egypt
         }
 
         private void UserAdding_Click(object sender, EventArgs e)
@@ -39,9 +40,8 @@ namespace VaccineTrackingSystem
         }
         private void FillEgyptianGovernorates()
         {
-            int ctr = 0;
             foreach (string governorate in DataContainer.EgyptianGovernorates)
-                UserGovernorate.Items.Insert(ctr++, governorate);
+                UserGovernorate.Items.Add(governorate);
         }
         private User FillUserData()
         {
@@ -82,6 +82,11 @@ namespace VaccineTrackingSystem
                 MessageBox.Show("National ID already exists");
                 return false;
             }
+            if (String.IsNullOrEmpty(UserCountry.Text) || String.IsNullOrEmpty(UserPassword.Text) || String.IsNullOrEmpty(UserName.Text))
+            {
+                MessageBox.Show("Fields cannot be left empty");
+                return false;
+            }
             try
             {
                 Convert.ToInt64(UserNationalID.Text);
@@ -103,22 +108,12 @@ namespace VaccineTrackingSystem
             }
             if (age < 0 || age > 110)
             {
-                MessageBox.Show("Enter Age Between 1 and 110");
+                MessageBox.Show("Enter Age Between 0 and 110");
                 return false;
             }
-            if (!DataContainer.EgyptianGovernorates.Contains(UserGovernorate.Text))
+            if (UserCountry.Text.ToLower() == "egypt" && !DataContainer.EgyptianGovernorates.Contains(UserGovernorate.Text))
             {
                 MessageBox.Show("Governorate must be in Egypt");
-                return false;
-            }
-            return true;
-        }
-        bool IsAllDigits(string s)
-        {
-            foreach (char c in s)
-            {
-                if (!char.IsDigit(c))
-                    MessageBox.Show("Enter Numbers only");
                 return false;
             }
             return true;
@@ -131,6 +126,22 @@ namespace VaccineTrackingSystem
             LogInForm form = new LogInForm();
             form.ShowDialog();
             this.Close();
+        }
+
+        private void UserCountry_TextChanged(object sender, EventArgs e)
+        {
+            if (UserCountry.Text.ToLower() == "egypt")
+                UserGovernorate.Enabled = true;
+            else
+            {
+                UserGovernorate.Text = "";
+                UserGovernorate.Enabled = false;
+            }
+        }
+
+        private void UserGovernorate_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 

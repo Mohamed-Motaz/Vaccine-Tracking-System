@@ -8,13 +8,13 @@ namespace VaccineTrackingSystem.DataModels
 {
     class User
     {
-
+        
         public string UserName { get; set; } = "";
         public string NationalID { get; set; } = "";
         public string Password { get; set; } = "";
         public string Gender { get; set; } = "";
         public int Age { get; set; } = 0;
-        public string Country { get; set; } = "Egypt";
+        public string Country { get; set; } = "";
         public string Governorate { get; set; } = "";
         public int Vaccinated { get; set; } = 0; //stands for number of doses taken, 0, 1, or 2
 
@@ -25,18 +25,12 @@ namespace VaccineTrackingSystem.DataModels
         }
         public static void HandleUserDelete(User user)
         {
-            Console.WriteLine("in handle delete " + DataContainer.Users.CurrentPos);
-            Console.WriteLine(DataContainer.UsersMap.Count);
-            Console.WriteLine(DataContainer.CurrentlyWaiting.CurrentPos);
-
             User tmpUser = DataContainer.UsersMap[user.NationalID];
-            Console.WriteLine(tmpUser.NationalID + " " + tmpUser.UserName);
             DataContainer.CurrentlyWaiting.Remove(tmpUser);
             DataContainer.Users.Remove(tmpUser);
             DataContainer.UsersMap.Remove(tmpUser.NationalID);
             DataContainer.CurrentUser = null;
-            Console.WriteLine(DataContainer.UsersMap.Count);
-            Console.WriteLine(DataContainer.CurrentlyWaiting.CurrentPos);
+           
         }
         public static void HandleUserAddition(User user)
         {
@@ -44,7 +38,6 @@ namespace VaccineTrackingSystem.DataModels
             DataContainer.UsersMap.Add(user.NationalID, user);
             if(user.Vaccinated==0)
                 DataContainer.CurrentlyWaiting.Add(user);
-            
         }
     }
 }

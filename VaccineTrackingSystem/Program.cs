@@ -33,7 +33,8 @@ namespace VaccineTrackingSystem
                 Gender = "Male",
                 Age = 15,
                 Governorate = "Giza",
-                Vaccinated = 0
+                Vaccinated = 0,
+                Country = "Egypt"
             }); Console.WriteLine(DataContainer.Users.CurrentPos);
 
 
@@ -45,7 +46,8 @@ namespace VaccineTrackingSystem
                 Gender = "Male",
                 Age = 15,
                 Governorate = "Giza",
-                Vaccinated = 1
+                Vaccinated = 1,
+                Country = "Egypt"
             });
             DataContainer.Users.Add(new User()
             {
@@ -55,7 +57,8 @@ namespace VaccineTrackingSystem
                 Gender = "Male",
                 Age = 15,
                 Governorate = "Giza",
-                Vaccinated = 2
+                Vaccinated = 2,
+                Country = "Egypt"
             });
             DataContainer.Users.Add(new User()
             {
@@ -65,7 +68,8 @@ namespace VaccineTrackingSystem
                 Gender = "Male",
                 Age = 15,
                 Governorate = "Giza",
-                Vaccinated = 1
+                Vaccinated = 1,
+                Country = "Egypt"
             });
             DataContainer.Users.Add(new User()
             {
@@ -75,7 +79,8 @@ namespace VaccineTrackingSystem
                 Gender = "Female",
                 Age = 15,
                 Governorate = "Giza",
-                Vaccinated = 2
+                Vaccinated = 2,
+                Country = "Egypt"
             });
             DataContainer.Users.Add(new User()
             {
@@ -85,7 +90,8 @@ namespace VaccineTrackingSystem
                 Gender = "Female",
                 Age = 15,
                 Governorate = "Giza",
-                Vaccinated = 0
+                Vaccinated = 0,
+                Country = "Egypt"
             });
             Console.WriteLine("in startup " + DataContainer.Users.CurrentPos);
             DataContainer.UsersMap = new Dictionary<string, User>()

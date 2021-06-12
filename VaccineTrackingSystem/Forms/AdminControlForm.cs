@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using VaccineTrackingSystem.DataModels;
+using VaccineTrackingSystem.DataStructures;
 
 namespace VaccineTrackingSystem.Forms
 {
@@ -18,10 +19,11 @@ namespace VaccineTrackingSystem.Forms
             InitializeComponent();
         }
         private void AdminControlForm_Load(object sender, EventArgs e)
-        {
-          
-            userBindingSource.DataSource = DataContainer.Users.ToList();
-            
+        { 
+            userBindingSource.DataSource = DataContainer.Users;
+            Console.WriteLine(DataContainer.Users[0].Country);
+            foreach (DataGridViewBand band in dataGridView.Columns)
+                band.ReadOnly = true;
         }
 
         private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -32,8 +34,8 @@ namespace VaccineTrackingSystem.Forms
                 {
                     Console.WriteLine("in delete " + DataContainer.Users.CurrentPos);
                     User tmpUser = (User)userBindingSource.Current;
-                    User.HandleUserDelete(tmpUser);                    
-                    userBindingSource.RemoveCurrent();
+                    User.HandleUserDelete(tmpUser);     //remove from backend                  
+                    userBindingSource.RemoveCurrent();  //remove from frontent
                     MessageBox.Show("User succesfully deleted");
                 }
             }
@@ -43,13 +45,11 @@ namespace VaccineTrackingSystem.Forms
         {
 
             if (searchTextBox.Text.Length == 0)
-            {
                 userBindingSource.DataSource = DataContainer.Users.ToList();
-
-            }
+            
             else
             {
-                List<User> newUsers = new List<User>();
+                CustomList<User> newUsers = new CustomList<User>();
 
                 foreach(User usr in DataContainer.Users)
                     if (usr.NationalID.Contains(searchTextBox.Text))
@@ -68,7 +68,7 @@ namespace VaccineTrackingSystem.Forms
         {
             if (MessageBox.Show("Are you sure you want to delete all users ?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                userBindingSource.DataSource = new List<User>();
+                userBindingSource.DataSource = new CustomList<User>();   //change the frontend
                 Console.WriteLine(DataContainer.Users.CurrentPos);
                 for (int i = 0; i <= DataContainer.Users.CurrentPos; i++)
                 {

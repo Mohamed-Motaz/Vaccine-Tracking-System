@@ -170,6 +170,7 @@ namespace VaccineTrackingSystem.Forms
             this.UpdatedUserCountry.Name = "UpdatedUserCountry";
             this.UpdatedUserCountry.Size = new System.Drawing.Size(210, 20);
             this.UpdatedUserCountry.TabIndex = 34;
+            this.UpdatedUserCountry.TextChanged += new System.EventHandler(this.UpdatedUserCountry_TextChanged);
             // 
             // label2
             // 

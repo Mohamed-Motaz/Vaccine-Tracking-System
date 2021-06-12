@@ -96,7 +96,7 @@ namespace VaccineTrackingSystem.Forms
                 MessageBox.Show("Enter Age Between 1 and 110");
                 return false;
             }
-            if (!DataContainer.EgyptianGovernorates.Contains(UpdatedUserGovernorate.Text))
+            if (UpdatedUserCountry.Text.ToLower() == "egypt" && !DataContainer.EgyptianGovernorates.Contains(UpdatedUserGovernorate.Text))
             {
                 MessageBox.Show("Governorate must be in Egypt");
                 return false;
@@ -127,6 +127,19 @@ namespace VaccineTrackingSystem.Forms
             UserForm form = new UserForm();
             form.ShowDialog();
             this.Close();
+        }
+
+        private void UpdatedUserCountry_TextChanged(object sender, EventArgs e)
+        {
+            
+                if (UpdatedUserCountry.Text.ToLower() == "egypt")
+                    UpdatedUserGovernorate.Enabled = true;
+                else
+                {
+                    UpdatedUserGovernorate.Text = "";
+                    UpdatedUserGovernorate.Enabled = false;
+                }
+            
         }
     }
 }

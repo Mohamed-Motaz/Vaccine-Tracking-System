@@ -49,7 +49,7 @@ namespace VaccineTrackingSystem.Forms
                 dose0 = Math.Round(dose0, 2);
                 dose1 = Math.Round(dose1, 2);
                 dose2 = Math.Round(dose2, 2);
-                textBox1.Text = (((double)DataContainer.CurrentlyWaiting.Count() / DataContainer.Users.Count()) * 100).ToString() + '%';
+                textBox1.Text = Math.Round((((double)DataContainer.CurrentlyWaiting.Count() / DataContainer.Users.Count()) * 100), 2).ToString() + '%';
                 textBox3.Text = dose0.ToString() + '%';
                 textBox4.Text = dose1.ToString() + '%';
                 textBox5.Text = dose2.ToString() + '%';
@@ -65,6 +65,8 @@ namespace VaccineTrackingSystem.Forms
 
             for (int i = 0; i < DataContainer.Users.Count(); i++)
             {
+                if (DataContainer.Users[i].Country.ToLower() != "egypt")
+                    continue;
                 if (DataContainer.Users[i].Vaccinated == 0)
                     dose0++;
                 else if (DataContainer.Users[i].Vaccinated == 1)
@@ -79,7 +81,7 @@ namespace VaccineTrackingSystem.Forms
             dose1 = Math.Round(dose1, 9);
             dose2 = Math.Round(dose2, 9);
 
-            textBox2.Text = (((double)DataContainer.CurrentlyWaiting.Count() / egyptPopulation) * 100).ToString() + '%';
+            textBox2.Text = Math.Round((((double)DataContainer.CurrentlyWaiting.Count() / egyptPopulation) * 100), 9).ToString() + '%';
             textBox6.Text = dose0.ToString() + '%';
             textBox9.Text = dose1.ToString() + '%';
             textBox8.Text = dose2.ToString() + '%';

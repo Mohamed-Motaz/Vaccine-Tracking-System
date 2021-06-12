@@ -8,17 +8,18 @@ using VaccineTrackingSystem.DataModels;
 
 namespace VaccineTrackingSystem.DataStructures
 {
-	class CustomList<T> : IEnumerable<T>, IEnumerator
+	class CustomList<T> : IEnumerable<T>, IEnumerator   //IEnumerable<T>, IEnumerator To be able to use with foreach loop and get the iterator using function
 	{
-		T []arr;
-		int size;
-		public int CurrentPos = -1;
+		private T []arr;
+		private int size;
+		public int CurrentPos = -1;   //index used
 		public int position = -1;
         private bool disposedValue;
 
-        public T this[int index]
+        public T this[int index]    
 		{
-			get { return (T)arr[index]; }
+			get { return arr[index]; } //allows CustomList[0] instead of CustomList.arr[0]; 
+			set { arr[index] = value; } //allows CustomList[0] = 0 instead of CustomList.arr[0] = 0; 
 		}
 		public CustomList()
 		{
@@ -26,16 +27,16 @@ namespace VaccineTrackingSystem.DataStructures
 			size = 105;
 		}
 
-		public bool MoveNext()
+		public bool MoveNext()  //Mandatory
 		{
 			position++;
 			return (position <= CurrentPos);
 		}
-		public void Reset()
+		public void Reset()  //Mandatory
 		{
 			position = 0;
 		}
-		public object Current
+		public object Current  //Mandatory
 		{
 			get { return arr[position]; }
 		}
@@ -51,7 +52,7 @@ namespace VaccineTrackingSystem.DataStructures
 			arr = NewArr;
 			size = NewSize;
 		}
-		public void Add( T value)
+		public void Add(T value)
 		{
 			CurrentPos++;
 			if(CurrentPos == size)
@@ -61,17 +62,17 @@ namespace VaccineTrackingSystem.DataStructures
 			arr[CurrentPos] = value;
 		}
 
-		public void Delete(int pos)
+		private void Delete(int index)
 		{
-			if (pos > CurrentPos || pos < 0) return;
-			for (int i = pos; i < CurrentPos; i++)
+			if (index > CurrentPos || index < 0) return;
+			for (int i = index; i < CurrentPos; i++)
 				arr[i] = arr[i + 1];
 			arr[CurrentPos] = default(T);
 			CurrentPos--;
 		}
 		public void Clear()
 		{
-			for (int i = 0; i <= CurrentPos; i++)
+			for (int i = 0; i <= CurrentPos; i++)   //only reason is to remove objects from the memory
 				arr[i] = default(T);
 			CurrentPos = -1;
 		}
@@ -85,7 +86,7 @@ namespace VaccineTrackingSystem.DataStructures
 			Delete(idx);
 
 		}
-		public IEnumerator<T> GetEnumerator()
+		public IEnumerator<T> GetEnumerator()  //Mandatory
 		{
 			foreach (T o in arr)
 			{
@@ -95,7 +96,7 @@ namespace VaccineTrackingSystem.DataStructures
 			}
 		}
 
-		IEnumerator IEnumerable.GetEnumerator()
+		IEnumerator IEnumerable.GetEnumerator()  //Mmandatory
 		{
 			return this.GetEnumerator();
 		}
