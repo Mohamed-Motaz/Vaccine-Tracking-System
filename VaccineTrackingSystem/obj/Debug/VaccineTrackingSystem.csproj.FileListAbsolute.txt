@@ -115,3 +115,4 @@ C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\
 C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.csproj.CoreCompileInputs.cache
 C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.exe
 C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.pdb
+D:\Computer Sceince\DS project\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.DataVisualizationForm.resources

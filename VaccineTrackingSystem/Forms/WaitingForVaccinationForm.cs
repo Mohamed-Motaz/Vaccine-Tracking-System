@@ -32,10 +32,7 @@ namespace VaccineTrackingSystem.Forms
                 newList.age = newUser.Age;
                 newList.country = newUser.Governorate;
                
-                if (flowLayoutPanel1.Controls.Count < 0)
-                    flowLayoutPanel1.Controls.Clear();
-                else
-                    flowLayoutPanel1.Controls.Add(newList);
+                flowLayoutPanel1.Controls.Add(newList);
             }
         }
 

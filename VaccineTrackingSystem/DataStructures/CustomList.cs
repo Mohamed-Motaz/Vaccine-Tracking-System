@@ -93,7 +93,7 @@ namespace VaccineTrackingSystem.DataStructures
 			{
 				if (o == null)
 					break;
-				yield return o;
+				yield return o; // yield -> return kaza value (iterator)
 			}
 		}
 
