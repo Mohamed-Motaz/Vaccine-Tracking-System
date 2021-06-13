@@ -36,13 +36,19 @@ namespace VaccineTrackingSystem.Forms
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.VaccinatedChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.BackBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.GenderChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.GovernoratesChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.VaccinatedChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GenderChart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GovernoratesChart)).BeginInit();
             this.SuspendLayout();
             // 
             // VaccinatedChart
@@ -53,7 +59,7 @@ namespace VaccineTrackingSystem.Forms
             this.VaccinatedChart.Legends.Add(legend1);
             this.VaccinatedChart.Location = new System.Drawing.Point(7, 74);
             this.VaccinatedChart.Name = "VaccinatedChart";
-            this.VaccinatedChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Light;
+            this.VaccinatedChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent;
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series1.IsValueShownAsLabel = true;
@@ -61,7 +67,7 @@ namespace VaccineTrackingSystem.Forms
             series1.Legend = "Legend1";
             series1.Name = "s1";
             this.VaccinatedChart.Series.Add(series1);
-            this.VaccinatedChart.Size = new System.Drawing.Size(422, 364);
+            this.VaccinatedChart.Size = new System.Drawing.Size(451, 270);
             this.VaccinatedChart.TabIndex = 0;
             this.VaccinatedChart.Text = "chart1";
             // 
@@ -89,7 +95,7 @@ namespace VaccineTrackingSystem.Forms
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(459, 41);
+            this.label1.Location = new System.Drawing.Point(473, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(451, 30);
             this.label1.TabIndex = 46;
@@ -101,7 +107,7 @@ namespace VaccineTrackingSystem.Forms
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(2, 39);
+            this.label2.Location = new System.Drawing.Point(12, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(437, 30);
             this.label2.TabIndex = 47;
@@ -113,9 +119,9 @@ namespace VaccineTrackingSystem.Forms
             this.GenderChart.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.GenderChart.Legends.Add(legend2);
-            this.GenderChart.Location = new System.Drawing.Point(464, 74);
+            this.GenderChart.Location = new System.Drawing.Point(478, 74);
             this.GenderChart.Name = "GenderChart";
-            this.GenderChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Light;
+            this.GenderChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent;
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series2.IsValueShownAsLabel = true;
@@ -123,16 +129,50 @@ namespace VaccineTrackingSystem.Forms
             series2.Legend = "Legend1";
             series2.Name = "s1";
             this.GenderChart.Series.Add(series2);
-            this.GenderChart.Size = new System.Drawing.Size(422, 364);
+            this.GenderChart.Size = new System.Drawing.Size(446, 270);
             this.GenderChart.TabIndex = 48;
             this.GenderChart.Text = "chart2";
+            // 
+            // GovernoratesChart
+            // 
+            chartArea3.Name = "ChartArea1";
+            this.GovernoratesChart.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.GovernoratesChart.Legends.Add(legend3);
+            this.GovernoratesChart.Location = new System.Drawing.Point(232, 380);
+            this.GovernoratesChart.Name = "GovernoratesChart";
+            this.GovernoratesChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series3.IsValueShownAsLabel = true;
+            series3.LabelFormat = "#.##%";
+            series3.Legend = "Legend1";
+            series3.Name = "s1";
+            this.GovernoratesChart.Series.Add(series3);
+            this.GovernoratesChart.Size = new System.Drawing.Size(506, 259);
+            this.GovernoratesChart.TabIndex = 49;
+            this.GovernoratesChart.Text = "chart3";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(227, 347);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(511, 30);
+            this.label3.TabIndex = 50;
+            this.label3.Text = "Distribution Of Vaccinated People By Governorates";
             // 
             // DataVisualizationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(910, 462);
+            this.ClientSize = new System.Drawing.Size(934, 651);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.GovernoratesChart);
             this.Controls.Add(this.GenderChart);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -142,6 +182,7 @@ namespace VaccineTrackingSystem.Forms
             this.Text = "DataVisualizationForm";
             ((System.ComponentModel.ISupportInitialize)(this.VaccinatedChart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GenderChart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GovernoratesChart)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,5 +195,7 @@ namespace VaccineTrackingSystem.Forms
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataVisualization.Charting.Chart GenderChart;
+        private System.Windows.Forms.DataVisualization.Charting.Chart GovernoratesChart;
+        private System.Windows.Forms.Label label3;
     }
 }

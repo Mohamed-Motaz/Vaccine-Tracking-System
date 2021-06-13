@@ -45,7 +45,7 @@ namespace VaccineTrackingSystem
                 Password = "password",
                 Gender = "Male",
                 Age = 15,
-                Governorate = "Giza",
+                Governorate = "Cairo",
                 Vaccinated = 1,
                 Country = "Egypt"
             });
