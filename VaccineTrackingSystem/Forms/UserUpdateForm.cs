@@ -22,8 +22,8 @@ namespace VaccineTrackingSystem.Forms
         {
             FillEgyptianGovernorates();
             FillFormData();
-
-        }     
+        }  
+        
         private void UserUpdating_Click(object sender, EventArgs e)
         {
             if (!Validate())
@@ -39,9 +39,8 @@ namespace VaccineTrackingSystem.Forms
         }        
         private void FillEgyptianGovernorates()
         {
-            int ctr = 0;
             foreach (string governorate in DataContainer.EgyptianGovernorates)
-                UpdatedUserGovernorate.Items.Insert(ctr++, governorate);
+                UpdatedUserGovernorate.Items.Add(governorate);
         }
         private void FillFormData()
         {
@@ -50,10 +49,12 @@ namespace VaccineTrackingSystem.Forms
             UpdatedUserPassword.Text = DataContainer.CurrentUser.Password;
             UpdatedUserCountry.Text = DataContainer.CurrentUser.Country;
             UpdatedUserAge.Text = DataContainer.CurrentUser.Age.ToString();
+
             if (DataContainer.CurrentUser.Gender == "Male")
                 Male.Checked = true;
             else
                 Female.Checked = true;
+
             if (DataContainer.CurrentUser.Vaccinated == 0)
                 Zero.Checked = true;
             else if (DataContainer.CurrentUser.Vaccinated == 1)
@@ -122,7 +123,6 @@ namespace VaccineTrackingSystem.Forms
 
         private void BackBtn_Click(object sender, EventArgs e)
         {
-            DataContainer.CurrentUser = null;
             this.Hide();
             UserForm form = new UserForm();
             form.ShowDialog();

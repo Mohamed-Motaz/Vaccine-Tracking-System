@@ -96,3 +96,22 @@ D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTr
 D:\My projects\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.csprojAssemblyReference.cache
 C:\Users\user.NB1129\Documents\GitHub\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.DataVisualizationForm.resources
 C:\Users\moham\Desktop\VaccineTrackingSystem\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.DataVisualizationForm.resources
+C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\bin\Debug\VaccineTrackingSystem.exe.config
+C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\bin\Debug\VaccineTrackingSystem.exe
+C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\bin\Debug\VaccineTrackingSystem.pdb
+C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.csprojAssemblyReference.cache
+C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.AdminControlForm.resources
+C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.AdminForm.resources
+C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.DataVisualizationForm.resources
+C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.LogInForm.resources
+C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.StatisticsForm.resources
+C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.UserAddingForm.resources
+C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.UserForm.resources
+C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.UserUpdateForm.resources
+C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Forms.WaitingForVaccinationForm.resources
+C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.ListItem.resources
+C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.Properties.Resources.resources
+C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.csproj.GenerateResource.cache
+C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.exe
+C:\Users\LENOVO\Desktop\Vaccine-Tracking-System\VaccineTrackingSystem\obj\Debug\VaccineTrackingSystem.pdb

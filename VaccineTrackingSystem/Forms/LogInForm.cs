@@ -63,7 +63,7 @@ namespace VaccineTrackingSystem
             this.Hide();
             UserAddingForm form = new UserAddingForm();
             form.ShowDialog();
-            this.Close();
+            //this.Close();
         }
 
         private void ShowPassword_CheckedChanged(object sender, EventArgs e)
