@@ -12,9 +12,9 @@ namespace VaccineTrackingSystem.DataStructures
 	{
 		private T []arr;
 		private int size;
-		public int CurrentPos = -1;   //index used
-		public int position = -1;
-        private bool disposedValue;
+		public int CurrentPos = -1;   //index used     // 1 2 5 0 0      -> 2
+		public int position = -1; //mandatory for interfaces
+        //private bool disposedValue;  //mandatory for interfaces
 
         public T this[int index]    
 		{
@@ -44,7 +44,7 @@ namespace VaccineTrackingSystem.DataStructures
 
         public void Expand()
 		{
-			int NewSize = size + 60;
+			int NewSize = size * 2;
 			T[] NewArr = new T[NewSize];
 			for (int i = 0; i < size; i++)
 				NewArr[i] = arr[i];
@@ -67,7 +67,7 @@ namespace VaccineTrackingSystem.DataStructures
 			if (index > CurrentPos || index < 0) return;
 			for (int i = index; i < CurrentPos; i++)
 				arr[i] = arr[i + 1];
-			arr[CurrentPos] = default(T);
+			arr[CurrentPos] = default(T); 
 			CurrentPos--;
 		}
 		public void Clear()
@@ -82,7 +82,8 @@ namespace VaccineTrackingSystem.DataStructures
 			for (int i = 0; i <= CurrentPos; i++)
 				if (Object.ReferenceEquals(arr[i],obj))
 					idx = i;
-			if (idx == -1) return;
+			if (idx == -1) 
+				return;
 			Delete(idx);
 
 		}

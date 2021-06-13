@@ -20,6 +20,6 @@ namespace VaccineTrackingSystem.DataModels
             "Sharqia", "Sohag", "South Sinai", "Suez"
         };
         public static CustomList<User> Users = new CustomList<User>() {};
-        public static Dictionary<string, User> UsersMap;   //Implemented using hashtable, so needed for fast access, search, and insert;
+        public static Dictionary<string, User> UsersMap;   //Implemented using hashtable, so needed for fast access(list and dictionary), search(dictionary only), and insert(list and dictionary);
     }
 }

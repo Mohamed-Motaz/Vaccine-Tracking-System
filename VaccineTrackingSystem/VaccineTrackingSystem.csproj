@@ -59,7 +59,6 @@
     <Compile Include="DataModels\DataContainer.cs" />
     <Compile Include="DataModels\User.cs" />
     <Compile Include="DataStructures\CustomList.cs" />
-    <Compile Include="DataStructures\CustomNode.cs" />
     <Compile Include="Forms\AdminControlForm.cs">
       <SubType>Form</SubType>
     </Compile>
