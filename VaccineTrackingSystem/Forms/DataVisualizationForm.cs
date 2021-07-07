@@ -27,7 +27,7 @@ namespace VaccineTrackingSystem.Forms
                 }
             }
             double Males = CntMales / Cnt, Females = CntFemales / Cnt;
-            GenderChart.Series["s1"].IsValueShownAsLabel = true;
+           // GenderChart.Series["s1"].IsValueShownAsLabel = true;
             GenderChart.Series["s1"].Points.AddXY("Males", Males);
             GenderChart.Series["s1"].Points.AddXY("Females", Females);
         }
